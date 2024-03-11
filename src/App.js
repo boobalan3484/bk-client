@@ -38,7 +38,7 @@ function App() {
     return () => {
       window.removeEventListener('scroll', handleNavScroll);
     };
-  }, [scrollTop]);
+  }, []);
 
   return (
     <div className='App'>

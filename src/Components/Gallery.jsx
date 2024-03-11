@@ -1,29 +1,63 @@
-import React, { useState } from 'react';
+import React, { Fragment } from 'react';
 import { Carousel } from "@material-tailwind/react";
+import { content } from '../Content'
 
 const Gallery = () => {
 
+    const { images } = content
+
+    const navi = ({ setActiveIndex, activeIndex, length }) => (
+        <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
+            {new Array(length).fill("").map((_, i) => (
+                <span
+                    key={i}
+                    className={`hidden`}
+                    onClick={() => setActiveIndex(i)}
+                />
+            ))}
+        </div>
+    )
+
     return (
-        <section className='h-60 w-9/12 mx-auto my-20'>
-            <Carousel loop={true} autoplay={true} className="rounded-xl ">
-                
-                <img
-                    src="https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-                    alt="image 1"
-                    className="h-full w-full object-cover object-center"
-                />
-                <img
-                    src="https://images.unsplash.com/photo-1432462770865-65b70566d673?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
-                    alt="image 2"
-                    className="h-full w-full object-cover object-center"
-                />
-                <img
-                    src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80"
-                    alt="image 3"
-                    className="h-full w-full object-cover object-center"
-                />
-            </Carousel>
-        </section>
+
+        <div className="mt-12">
+            <div className="grid gap-y-8 gap-x-12 sm:grid-cols-2 lg:grid-cols-3">
+                {images.map((image, i) => (
+                    <Fragment key={i}>
+                        <Carousel loop={true} autoplay={true} className="rounded-xl " navigation={navi} nextArrow={navi} prevArrow={navi}>
+                            {image.set1.map((item) => (
+                                <img
+                                    key={item.id}
+                                    src={item.src}
+                                    alt={item.alt}
+                                    className="h-full w-full object-cover object-center"
+                                />
+                            ))}
+                        </Carousel>
+                        <Carousel loop={true} autoplay={true} className="rounded-xl " navigation={navi} nextArrow={navi} prevArrow={navi}>
+                            {image.set2.map((item) => (
+                                <img
+                                    key={item.id}
+                                    src={item.src}
+                                    alt={item.alt}
+                                    className="h-full w-full object-cover object-center"
+                                />
+                            ))}
+                        </Carousel>
+                        <Carousel loop={true} autoplay={true} className="rounded-xl " navigation={navi} nextArrow={navi} prevArrow={navi}>
+                            {image.set3.map((item) => (
+                                <img
+                                    key={item.id}
+                                    src={item.src}
+                                    alt={item.alt}
+                                    className="h-full w-full object-cover object-center"
+                                />
+                            ))}
+                        </Carousel>
+                    </Fragment>
+                ))}
+            </div>
+        </div>
 
     );
 }

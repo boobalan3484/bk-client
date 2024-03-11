@@ -4,7 +4,8 @@ import Hero from '../Components/Hero'
 // import Footer from '../Components/Footer'
 import Feature from '../Components/Feature'
 import About from '../Components/About'
-import Gallery from '../Components/Gallery'
+// import Gallery from '../Components/Gallery'
+import Media from '../Components/Media'
 
 
 const Content = () => {
@@ -14,7 +15,8 @@ const Content = () => {
             <Programs />
             <About />
             <Feature />
-            <Gallery />
+            {/* <Gallery /> */}
+            <Media />
             {/* <Footer /> */}
         </main>
     )
