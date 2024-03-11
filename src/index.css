@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#hero {
+    background: linear-gradient( 45deg, rgb(209, 141, 190), rgb(196, 192, 102),rgb(76, 160, 118) );
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color:  rgb(129, 129, 167);
+    border: 3px solid rgb(200, 200, 233);
+    border-radius: 7px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background:  rgb(200, 200, 233);
+  }
