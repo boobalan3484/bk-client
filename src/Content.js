@@ -12,7 +12,7 @@ export const content = {
         { title: "Programs", path: "#programs" },
         { title: "About us", path: "#about" },
         { title: "Gallery", path: "#media" },
-        { title: "Videos", path: "#videos" },
+        { title: "Team", path: "#team" },
         { title: "Contact us", path: "#contact" }
     ],
 
@@ -47,6 +47,55 @@ export const content = {
             description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto explicabo non quas impedit exercitationem suscipit praesentium tempora dicta, facilis nihil amet deserunt delectus ut, provident, molestias odio laudantium voluptates velit!",
             image: Varmam,
             link: ''
+        },
+    ],
+
+    team : [
+        {
+            avatar: "https://images.unsplash.com/photo-1511485977113-f34c92461ad9?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&ixid=eyJhcHBfaWQiOjE3Nzg0fQ",
+            name: "Martiana dialan",
+            title: "Product designer",
+            linkedin: "https://www.linkedin.com/",
+            twitter: "https://twitter.com/",
+
+        },
+        {
+            avatar: "https://api.uifaces.co/our-content/donated/xZ4wg2Xj.jpg",
+            name: "Micheal colorand",
+            title: "Software engineer",
+            linkedin: "https://www.linkedin.com/",
+            twitter: "https://twitter.com/",
+
+        },
+        {
+            avatar: "https://randomuser.me/api/portraits/women/79.jpg",
+            name: "Brown Luis",
+            title: "Full stack engineer",
+            linkedin: "https://www.linkedin.com/",
+            twitter: "https://twitter.com/",
+
+        },
+        {
+            avatar: "https://randomuser.me/api/portraits/women/63.jpg",
+            name: "Lysa sandiago",
+            title: "Head of designers",
+            linkedin: "https://www.linkedin.com/",
+            twitter: "https://twitter.com/",
+
+        },
+        {
+            avatar: "https://randomuser.me/api/portraits/men/86.jpg",
+            name: "Daniel martin",
+            title: "Product designer",
+            linkedin: "https://www.linkedin.com/",
+            twitter: "https://twitter.com/",
+        },
+        {
+            avatar: "https://randomuser.me/api/portraits/men/46.jpg",
+            name: "Vicky tanson",
+            title: "Product manager",
+            linkedin: "https://www.linkedin.com/",
+            twitter: "https://twitter.com/",
         },
     ],
 
