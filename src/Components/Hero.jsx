@@ -18,7 +18,8 @@ const Hero = () => {
             {/* It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum */}
           </p>
           <p className="text-gray-800 max-w-xl leading-relaxed sm:mx-auto lg:ml-0">
-            Martial Arts Reg. No. Tamil Nadu. 148/2023, Chennai, Periyamanali. Pin - 637 410.
+            Martial Arts Reg. No. Tamil Nadu. 148/2023, Chennai,
+            <br />Periyamanali. PIN - 637 410.
           </p>
           <button className="outline-none bg-gray-700 text-white text-center px-4 py-3 rounded-full shadow w-full ring-offset-2 ring-gray-700 focus:ring-2  sm:w-auto">
             Get started

@@ -1,7 +1,7 @@
 import React from 'react'
 import { IoIosArrowRoundUp } from "react-icons/io";
 
-import Karate from '../Assets/programs/Karate.jpg'
+import Karate from '../../Assets/programs/Karate.jpg'
 
 const Videos = () => {
     return (
@@ -18,7 +18,7 @@ const Videos = () => {
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde molestiae repellat doloremque quos ullam nobis nam.
                         </p>
                         <div className="px-4  text-center ">
-                            <a href='/' className="text-indigo-600 hover:text-indigo-500  text-sm font-semibold group">
+                            <a href=' ' className="text-indigo-600 hover:text-indigo-500  text-sm font-semibold group">
                                 Visit our channel
                                 <span className='inline-block'>
                                     <IoIosArrowRoundUp className=' rotate-45 text-lg transform translate-x-0 translate-y-[5px] group-hover:translate-y-[2px] group-hover:translate-x-[3px] transition-all duration-150' />

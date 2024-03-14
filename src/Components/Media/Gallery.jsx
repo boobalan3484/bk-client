@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { Carousel } from "@material-tailwind/react";
-import { content } from '../Content'
+import { content } from '../../Content'
 
 const Gallery = () => {
 

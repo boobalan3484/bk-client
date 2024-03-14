@@ -1,6 +1,6 @@
 import React from 'react'
-import Gallery from './Gallery'
-import Videos from './Videos'
+import Gallery from './Media/Gallery'
+import Videos from './Media/Videos'
 
 const Media = () => {
     return (
