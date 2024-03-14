@@ -10,39 +10,44 @@ function App() {
   const [navStyle, setNavStyle] = useState('');
   const [navPadding, setNavPadding] = useState('py-3 md:py-5');
 
-
-  const handleNavScroll = () => {
-
-    const currentScroll = window.scrollY;
-    // setScrolling(currentScroll > scrollTop);
-    setScrollTop(currentScroll);
-
-    const heroSection = document.getElementById('hero');
-    if (heroSection) {
-      const heroSectionBottom = heroSection.offsetTop + heroSection.clientHeight;
-      setScrolling(currentScroll < heroSectionBottom && currentScroll > scrollTop);
-
-      if (currentScroll < heroSectionBottom) {
-        setNavStyle(currentScroll > scrollTop ? 'shadow-sm shadow-slate-700' : 'shadow-none')
-        setNavPadding(currentScroll > scrollTop ? 'py-1' : 'py-3 md:py-5')
-      }
-      else {
-        setNavStyle(currentScroll > scrollTop ? ' shadow-lg shadow-slate-700' : 'shadow-none')
-        setNavPadding(currentScroll > scrollTop && 'py-[6px]')
-      }
-
-    }
-  };
   useEffect(() => {
+
+    const handleNavScroll = () => {
+
+      const currentScroll = window.scrollY;
+
+      setScrollTop(currentScroll);
+
+      const heroSection = document.getElementById('hero');
+      if (heroSection) {
+        const heroSectionBottom = heroSection.offsetTop + (heroSection.clientHeight);
+        setScrolling(currentScroll > scrollTop);
+
+        // setScrolling(currentScroll < heroSectionBottom && currentScroll > scrollTop);
+
+
+        if (currentScroll < heroSectionBottom) {
+          setNavStyle(currentScroll > scrollTop ? ' shadow-sm ' : 'shadow-none')
+          setNavPadding((currentScroll > scrollTop) ? 'py-2' : 'py-3 md:py-5 ')
+          setScrolling((currentScroll))
+        }
+        else {
+          setNavStyle(!(currentScroll > scrollTop) ?  ' shadow-lg nav-bg': 'shadow-sm nav-bg')
+          setNavPadding((currentScroll > scrollTop) ? 'py-1' : 'py-2 md:py-3')
+        }
+
+      }
+    };
     window.addEventListener('scroll', handleNavScroll);
     return () => {
       window.removeEventListener('scroll', handleNavScroll);
     };
-  },[]);
+  }, [scrollTop]);
 
   return (
     <div className='App'>
-      <Header navScroll={scrolling}
+      <Header
+        navScroll={scrolling}
         navStyle={navStyle}
         navPadding={navPadding}
       />

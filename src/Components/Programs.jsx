@@ -7,7 +7,7 @@ const Programs = () => {
     const { programData } = content
 
     return (
-        <section id='programs' className="py-16 pt-20">
+        <section id='programs' className="py-14 pt-20">
             <div className="max-w-screen-xl mx-auto px-4 md:px-8">
                 <div className="max-w-md">
                     <h1 className="text-gray-800 text-3xl font-semibold sm:text-4xl tracking-wide">Martial Art Programs</h1>
@@ -17,8 +17,9 @@ const Programs = () => {
                 <ul className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3 group/list">
                     {
                         programData.map((item, i) => (
-                            <li className=" rounded-lg shadow-sm shadow-blue-gray-400 hover:shadow-lg hover:shadow-blue-gray-500 md:hover:!opacity-100 md:group-hover/list:opacity-40 " key={i}>
-                                <div className="flex items-center justify-between p-4  ">
+                            <li className=" group/a rounded-lg shadow-sm shadow-blue-gray-400 hover:shadow-lg hover:shadow-blue-gray-500 md:hover:!opacity-100 md:group-hover/list:opacity-40 cursor-default " key={i}>
+
+                                <div className="flex items-center justify-between p-4 ">
                                     <div className="space-y-2 flex flex-col items-center">
                                         <img src={item.image} alt={item.title} loading="lazy" className='h-36' />
 
@@ -27,11 +28,11 @@ const Programs = () => {
                                     </div>
                                     {/* <button className="text-gray-700 text-sm border rounded-lg px-3 py-2 duration-150 hover:bg-gray-100">Connect</button> */}
                                 </div>
-                                <div className="py-5 px-4  text-center ">
-                                    <a href='/' className="text-indigo-600 hover:text-indigo-500  text-sm font-semibold">
+                                <div className="py-5 px-4  text-center  ">
+                                    <a href=' ' className="text-indigo-600 hover:text-indigo-500 text-sm font-semibold ">
                                         Learn more
                                         <span className='inline-block'>
-                                            <IoIosArrowRoundUp className=' rotate-45 text-lg transform translate-x-0 translate-y-[5px] group-hover/list:translate-y-[2px] group-hover/list:translate-x-[3px] transition-all duration-150' />
+                                            <IoIosArrowRoundUp className=' rotate-45 text-lg transform translate-x-0 translate-y-[5px] group-hover/a:translate-y-[2px] group-hover/a:translate-x-[3px] transition-all duration-150' />
                                         </span>
                                     </a>
                                 </div>

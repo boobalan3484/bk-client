@@ -3,19 +3,23 @@
 @tailwind utilities;
 
 #hero {
-    background: linear-gradient( 45deg, rgb(209, 141, 190), rgb(196, 192, 102),rgb(76, 160, 118) );
+  background-image: linear-gradient(to bottom, #88d3ce 10%, white 100%);
 }
 
 ::-webkit-scrollbar {
-    width: 12px;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background-color:  rgb(129, 129, 167);
-    border: 3px solid rgb(200, 200, 233);
-    border-radius: 7px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background:  rgb(200, 200, 233);
-  }
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  border: 3px solid #eef3f7;
+  border-radius: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+}
+
+.nav-bg {
+  background: linear-gradient(-225deg, #e3fdf595 0%, #ffe6fa98 100%);
+}

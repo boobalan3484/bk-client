@@ -20,8 +20,16 @@ const Gallery = () => {
 
     return (
 
-        <div className="mt-12">
-            <div className="grid gap-y-8 gap-x-12 sm:grid-cols-2 lg:grid-cols-3">
+        <section>
+            <div className="max-w-2xl mx-auto">
+                <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
+                    Gallery
+                </h3>
+                <p className="mt-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius, enim ex faucibus purus.
+                </p>
+            </div>
+            <div className="mt-8  grid gap-y-8 gap-x-12 sm:grid-cols-2 lg:grid-cols-3">
                 {images.map((image, i) => (
                     <Fragment key={i}>
                         <Carousel loop={true} autoplay={true} className="rounded-xl " navigation={navi} nextArrow={navi} prevArrow={navi}>
@@ -30,7 +38,7 @@ const Gallery = () => {
                                     key={item.id}
                                     src={item.src}
                                     alt={item.alt}
-                                    className="h-full w-full object-cover object-center"
+                                    className="h-56 sm:h-64 w-full object-cover object-center"
                                 />
                             ))}
                         </Carousel>
@@ -40,7 +48,7 @@ const Gallery = () => {
                                     key={item.id}
                                     src={item.src}
                                     alt={item.alt}
-                                    className="h-full w-full object-cover object-center"
+                                    className="h-56 sm:h-64 w-full object-cover object-center"
                                 />
                             ))}
                         </Carousel>
@@ -50,14 +58,14 @@ const Gallery = () => {
                                     key={item.id}
                                     src={item.src}
                                     alt={item.alt}
-                                    className="h-full w-full object-cover object-center"
+                                    className="h-56 sm:h-64 w-full object-cover object-center"
                                 />
                             ))}
                         </Carousel>
                     </Fragment>
                 ))}
             </div>
-        </div>
+        </section>
 
     );
 }
