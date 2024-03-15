@@ -2,38 +2,33 @@ import React from 'react'
 import { content } from '../../Content'
 import { Link } from 'react-scroll'
 
-const NavLinks = () => {
+const NavLinks = ({ navText }) => {
 
   const { nav } = content
 
   return (
 
-    <ul className="justify-end items-center space-y-6 md:flex md:space-x-6 md:space-y-0">
+    <ul className="md:flex justify-end items-center space-y-6 md:space-x-6 md:space-y-0 group/list">
       {
         nav.map((item, i) =>
         (
-          <>
-            <li className="text-gray-700 hover:text-indigo-600  ">
-              {/* <a href={item.path} className="md:block flex justify-center tracking-wide font-semibold hover:drop-shadow-sm">
+          <li key={i} className={` ${navText} text-blue-gray-800 md:hover:!opacity-100 md:group-hover/list:opacity-50`}>
+            {/* <a href={item.path} className="md:block flex justify-center tracking-wide font-semibold hover:drop-shadow-sm">
                 {item.title.toUpperCase()}
               </a> */}
-              <Link to={`${item.title.toLowerCase()}`} 
+            <Link to={`${item.path}`}
               activeClass='active'
               smooth={true}
-              duration={200}
+              duration={300}
               spy={true}
               offset={0}
               key={i}
-              
-              className="md:block flex justify-center tracking-wide font-semibold hover:drop-shadow-sm">
-                {item.title.toUpperCase()}
-              </Link>
-            </li>
-          </>
-
+              className="md:block flex justify-center tracking-wide font-semibold hover:drop-shadow-sm cursor-pointer ">
+              {item.title.toUpperCase()}
+            </Link>
+          </li>
         )
-        )
-      }
+        )}
 
       {/* <span className='hidden w-px h-6 bg-gray-300 md:block'></span> */}
 

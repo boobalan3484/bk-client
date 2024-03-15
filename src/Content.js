@@ -5,17 +5,16 @@ import Karate from './Assets/programs/Karate.jpg'
 import Silambam from './Assets/programs/Silambam.jpg'
 import Varmam from './Assets/programs/Varmam.png'
 
-
 import { FaFacebookF, FaXTwitter, FaInstagram, FaYoutube } from "react-icons/fa6";
 
 export const content = {
 
     nav: [
-        { title: "Programs", path: "#programs" },
-        { title: "About", path: "#about" },
-        { title: "Team", path: "#team" },
-        { title: "Gallery", path: "#media" },
-        { title: "Contact", path: "#contact" }
+        { title: "programs", path: "programs" },
+        { title: "about", path: "about" },
+        { title: "team", path: "team" },
+        { title: "gallery", path: "media" },
+        { title: "contact", path: "contact" }
     ],
 
     programData: [
@@ -24,7 +23,6 @@ export const content = {
             description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto explicabo non quas impedit exercitationem suscipit praesentium tempora dicta, facilis nihil amet deserunt delectus ut, provident, molestias odio laudantium voluptates velit!",
             image: Karate,
             link: '',
-            // gridStyle:''
         },
         {
             title: 'Nunchack',

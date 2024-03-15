@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Brand from './Brand'
 import NavLinks from './NavLinks'
 
-const NavBar = ({ navScroll, navStyle, navPadding }) => {
+const NavBar = ({ navScroll, navStyle, navPadding, navText }) => {
 
   const [active, setActive] = useState(false)
 
@@ -44,7 +44,9 @@ const NavBar = ({ navScroll, navStyle, navPadding }) => {
 
           <div className={`flex-1 pb-3 mt-8 md:block md:pb-0 md:mt-0 ${active ? 'block' : 'hidden'}`}>
 
-            <NavLinks />
+            <NavLinks
+              navText={navText}
+            />
 
           </div>
 

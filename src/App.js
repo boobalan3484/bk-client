@@ -9,6 +9,7 @@ function App() {
   const [scrollTop, setScrollTop] = useState(0);
   const [navStyle, setNavStyle] = useState('');
   const [navPadding, setNavPadding] = useState('py-3 md:py-5');
+  const [navText, setNavText] = useState('text-base');
 
   useEffect(() => {
 
@@ -28,12 +29,15 @@ function App() {
 
         if (currentScroll < heroSectionBottom) {
           setNavStyle(currentScroll > scrollTop ? ' shadow-sm ' : 'shadow-none')
-          setNavPadding((currentScroll > scrollTop) ? 'py-2' : 'py-3 md:py-5 ')
+          setNavPadding((currentScroll > scrollTop) ? 'py-2 ' : 'py-3 md:py-5 ')
+          setNavText((currentScroll > scrollTop) ? 'text-base ' : 'text-base')
           setScrolling((currentScroll))
         }
         else {
-          setNavStyle(!(currentScroll > scrollTop) ?  ' shadow-lg nav-bg': 'shadow-sm nav-bg')
+          setNavStyle(!(currentScroll > scrollTop) ? ' shadow-lg nav-bg' : 'shadow-sm nav-bg')
           setNavPadding((currentScroll > scrollTop) ? 'py-1' : 'py-2 md:py-3')
+          setNavText((currentScroll > scrollTop) ? '' : '')
+
         }
 
       }
@@ -50,6 +54,7 @@ function App() {
         navScroll={scrolling}
         navStyle={navStyle}
         navPadding={navPadding}
+        navText={navText}
       />
       <Content />
       {/* <PageRoutes /> */}

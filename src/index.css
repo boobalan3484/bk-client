@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-#hero {
-  background-image: linear-gradient(to bottom, #88d3ce 10%, white 100%);
-}
-
 ::-webkit-scrollbar {
   width: 12px;
 }
@@ -21,7 +17,11 @@
 }
 
 ::selection {
-  @apply bg-[#f0fdfa] text-cyan-600;
+  @apply text-[#f0fdfa] bg-cyan-600;
+}
+
+#hero {
+  background-image: linear-gradient(to bottom, #88d3ce 10%, white 100%);
 }
 
 .nav-bg {
