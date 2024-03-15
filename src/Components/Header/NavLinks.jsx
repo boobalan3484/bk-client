@@ -1,5 +1,6 @@
 import React from 'react'
 import { content } from '../../Content'
+import { Link } from 'react-scroll'
 
 const NavLinks = () => {
 
@@ -11,11 +12,25 @@ const NavLinks = () => {
       {
         nav.map((item, i) =>
         (
-          <li key={i} className="text-gray-700 hover:text-indigo-600  ">
-            <a href={item.path} className="md:block flex justify-center tracking-wide font-semibold hover:drop-shadow-sm">
-              {item.title.toUpperCase()}
-            </a>
-          </li>
+          <>
+            <li className="text-gray-700 hover:text-indigo-600  ">
+              {/* <a href={item.path} className="md:block flex justify-center tracking-wide font-semibold hover:drop-shadow-sm">
+                {item.title.toUpperCase()}
+              </a> */}
+              <Link to={`${item.title.toLowerCase()}`} 
+              activeClass='active'
+              smooth={true}
+              duration={200}
+              spy={true}
+              offset={0}
+              key={i}
+              
+              className="md:block flex justify-center tracking-wide font-semibold hover:drop-shadow-sm">
+                {item.title.toUpperCase()}
+              </Link>
+            </li>
+          </>
+
         )
         )
       }

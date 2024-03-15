@@ -20,6 +20,10 @@
   background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
 }
 
+::selection {
+  @apply bg-[#f0fdfa] text-cyan-600;
+}
+
 .nav-bg {
   background: linear-gradient(-225deg, #e3fdf595 0%, #ffe6fa98 100%);
 }
