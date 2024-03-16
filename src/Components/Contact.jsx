@@ -23,7 +23,7 @@ const Contact = () => {
                     </div>
 
          <div data-aos="fade-left">
-         <iframe title='map' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7440.834390326187!2d78.07128195572346!3d11.378158515632478!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babdd0071f4d21b%3A0x22207226fdc8f9b!2sGovernment%20Hospital%20%F0%9F%8F%A5%20Periyamanali!5e0!3m2!1sen!2sin!4v1710582024274!5m2!1sen!2sin" width="550" height="200" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        
+         <iframe title='map' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7440.834390326187!2d78.07128195572346!3d11.378158515632478!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babdd0071f4d21b%3A0x22207226fdc8f9b!2sGovernment%20Hospital%20%F0%9F%8F%A5%20Periyamanali!5e0!3m2!1sen!2sin!4v1710582024274!5m2!1sen!2sin" width="600" height="200" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        
           </div>
 
 
