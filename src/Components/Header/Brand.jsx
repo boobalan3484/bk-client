@@ -1,15 +1,19 @@
 import React from 'react'
+import logo from '../../Assets/hero/logo.png'
 
 const Brand = () => {
   return (
     <>
-      <a href="/">
+      <a href="/" className='flex items-center gap-2'>
         <img
-          src="https://www.floatui.com/logo.svg"
-          width={120}
-          height={50}
+          src={logo}
+          // width={70}
           alt="Float UI logo"
+          className='object-cover w-20'
         />
+        <p className='text-base font-bold tracking-wide text-indigo-900'>
+          BOHAR KARATE TRAINING SCHOOL
+        </p>
       </a>
     </>
 

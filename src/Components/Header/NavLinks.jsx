@@ -12,8 +12,8 @@ const NavLinks = ({ navText }) => {
       {
         nav.map((item, i) =>
         (
-          <li key={i} className={` ${navText} text-blue-gray-800 md:hover:!opacity-100 md:group-hover/list:opacity-50`}>
-            {/* <a href={item.path} className="md:block flex justify-center tracking-wide font-semibold hover:drop-shadow-sm">
+          <li key={i} className={`text-blue-gray-800 md:hover:!opacity-100 md:group-hover/list:opacity-50`}>
+            {/* <a href={item.path} className=" ${navText} md:block flex justify-center tracking-wide font-semibold hover:drop-shadow-sm">
                 {item.title.toUpperCase()}
               </a> */}
             <Link to={`${item.path}`}

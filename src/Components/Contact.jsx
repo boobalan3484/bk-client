@@ -21,7 +21,7 @@ const Contact = () => {
                         </p>
 
                     </div>
-                    <div className="flex-1 mt-12 sm:max-w-lg lg:max-w-md">
+                    {/* <div className="flex-1 mt-12 sm:max-w-lg lg:max-w-md">
                         <form
                             onSubmit={(e) => e.preventDefault()}
                             className="space-y-5"
@@ -75,7 +75,7 @@ const Contact = () => {
                             </button>
 
                         </form>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </section>

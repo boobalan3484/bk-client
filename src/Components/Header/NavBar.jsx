@@ -18,7 +18,7 @@ const NavBar = ({ navScroll, navStyle, navPadding, navText }) => {
 
         <div className="items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8">
 
-          <div className={`flex items-center justify-between ${navPadding} md:block`}>
+          <div className={`flex items-center justify-between ${navPadding} py-[2px]  md:block`}>
 
             <Brand />
 
@@ -45,7 +45,7 @@ const NavBar = ({ navScroll, navStyle, navPadding, navText }) => {
           <div className={`flex-1 pb-3 mt-8 md:block md:pb-0 md:mt-0 ${active ? 'block' : 'hidden'}`}>
 
             <NavLinks
-              navText={navText}
+            // navText={navText}
             />
 
           </div>

@@ -9,14 +9,13 @@ const Hero = () => {
       <div className="pt-28 mx-auto max-w-screen-xl pb-4 px-4 items-center lg:flex md:px-8">
 
         <div className="space-y-4 flex-1 sm:text-center lg:text-left">
-          <h1 className="text-gray-800 font-black text-4xl xl:text-5xl">
+          <h1 className="text-gray-800 font-extrabold text-4xl xl:text-5xl">
             BOHAR KARATE
             <span className="text-indigo-600"> TRAINING SCHOOL</span>
           </h1>
-          <p className="text-gray-600 text-3xl font-bold max-w-xl leading-relaxed sm:mx-auto lg:ml-0">
+          {/* <p className="text-gray-600 text-3xl font-bold max-w-xl leading-relaxed sm:mx-auto lg:ml-0">
             MARTIAL ARTS
-            {/* It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum */}
-          </p>
+          </p> */}
           <p className="text-gray-800 max-w-xl leading-relaxed sm:mx-auto lg:ml-0">
             Martial Arts Reg. No. Tamil Nadu. 148/2023, Chennai,
             <br />Periyamanali. PIN - 637 410.
