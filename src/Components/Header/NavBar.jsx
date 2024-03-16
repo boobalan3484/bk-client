@@ -12,7 +12,9 @@ const NavBar = ({ navScroll, navStyle, navPadding, navText }) => {
 
   return (
 
-    <header className={`fixed top-0 z-20 w-full backdrop-blur-lg md:backdrop-blur-md transition-transform duration-300 ease-in-out ${navStyle} ${navScroll ? '-translate-y-full' : 'translate-y-0 '}`}>
+    <header className={`fixed top-0 z-20 w-full backdrop-blur-lg md:backdrop-blur-md transition-transform duration-300 ease-in-out ${navStyle} ${navScroll ? '-translate-y-full' : 'translate-y-0 '}`}
+
+    >
 
       <nav className="  w-full md:static md:text-sm md:border-none">
 

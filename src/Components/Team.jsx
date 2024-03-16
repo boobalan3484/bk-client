@@ -8,7 +8,7 @@ const Team = () => {
     return (
         <section id='team' className="py-14 pt-20">
             <div className="max-w-screen-xl mx-auto px-4 md:px-8">
-                <div className="max-w-xl">
+                <div className="max-w-xl" data-aos="zoom-in">
                     <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
                         Meet our team
                     </h3>
@@ -19,7 +19,10 @@ const Team = () => {
                 <div className="mt-12">
                     <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
                         {team.map((item, i) => (
-                            <li key={i} className="flex gap-4 items-center">
+                            <li key={i} className="flex gap-4 items-center"
+                            data-aos="fade-left"
+              data-aos-delay ={i*400}
+                            >
                                 <div className="flex-none w-24 h-24">
                                     <img
                                         src={item.avatar}
