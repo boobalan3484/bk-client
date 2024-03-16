@@ -8,7 +8,7 @@ const Hero = () => {
     <section id='hero' >
       <div className="pt-28 mx-auto max-w-screen-xl pb-4 px-4 items-center lg:flex md:px-8">
 
-        <div className="space-y-4 flex-1 sm:text-center lg:text-left">
+        <div className="space-y-4 flex-1 sm:text-center lg:text-left" data-aos="fade-right">
           <h1 className="text-gray-800 font-extrabold text-4xl xl:text-5xl">
             BOHAR KARATE
             <span className="text-indigo-600"> TRAINING SCHOOL</span>
@@ -25,7 +25,7 @@ const Hero = () => {
           </button>
         </div>
 
-        <div className="flex-1 text-center mt-4 lg:mt-0 lg:ml-3">
+        <div className="flex-1 text-center mt-4 lg:mt-0 lg:ml-3" data-aos="fade-left" data-aos-delay ="1000">
           <img src={`${KaratePNG}`} alt=' ' className="w-full mx-auto sm:w-10/12 drop-shadow-xl lg:w-full" />
         </div>
       </div>

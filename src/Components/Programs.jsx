@@ -9,18 +9,29 @@ const Programs = () => {
     return (
         <section id='programs' className="py-14 pt-20">
             <div className="max-w-screen-xl mx-auto px-4 md:px-8">
+<<<<<<< HEAD
                 <div className="max-w-xl">
                     <h1 className="text-gray-800 text-3xl font-semibold sm:text-4xl tracking-wide">Martial Art Programs</h1>
                     <p className="text-gray-600 mt-2">Discover the physical, mental, and spiritual benefits of this ancient martial art in a supportive and welcoming community.</p>
+=======
+                <div className="max-w-md" data-aos="zoom-in">
+                    <h1 className="text-gray-800 text-3xl font-semibold sm:text-4xl tracking-wide" >Martial Art Programs</h1>
+                    <p className="text-gray-600 mt-2">Extend and automate your workflow by using integrations for your favorite tools.</p>
+
+>>>>>>> 0320c9712fb5749729f03c6a569aa860182a3ff9
                 </div>
                 <ul className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3 group/list">
                     {
                         programData.map((item, i) => (
-                            <li className=" group/a rounded-lg shadow-sm shadow-blue-gray-400 hover:shadow-lg hover:shadow-blue-gray-500 md:hover:!opacity-100 md:group-hover/list:opacity-40 cursor-default " key={i}>
+                            <li key={i}
+                                className=" group/a rounded-lg shadow-sm shadow-blue-gray-400 hover:shadow-lg hover:shadow-blue-gray-500 group-hover/list:blur-sm hover:!blur-none cursor-pointer transition duration-300 ease-in"
+                                data-aos="zoom-in"
+                                data-aos-delay={i * 500}
+                            >
 
                                 <div className="flex items-center justify-between p-4 ">
                                     <div className="space-y-2 flex flex-col items-center">
-                                        <img src={item.image} alt={item.title} loading="lazy" className='h-36' />
+                                        <img src={item.image} alt={item.title} loading="lazy" className='h-36 group-hover/a:scale-110 transition-all duration-300 ease-in' />
 
                                         <h4 className="text-gray-800 font-semibold">{item.title}</h4>
                                         <p className="text-gray-600 text-sm text-justify">{item.description.length >= 260 ? item.description.slice(0, 257)+' ...' : item.description}</p>

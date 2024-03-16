@@ -8,9 +8,9 @@ const Footer = () => {
 
     return (
 
-        <footer className='sticky nav-bg backdrop-blur-md ' style={{ boxShadow: '0 -8px 15px -3px #e0e0e0' }}>
+        <footer className='sticky nav-bg backdrop-blur-md ' style={{ boxShadow: '0 -8px 15px -3px #e0e0e0' }}  >
             
-            <section className="text-gray-800  px-4 py-5 max-w-screen-xl mx-auto md:px-8">
+            <section className="text-gray-800  px-4 py-5 max-w-screen-xl mx-auto md:px-8" >
                 
                 <div className=' max-w-xl md:max-w-full flex flex-col lg:flex-row justify-between  gap-5'>
                     {contactMethods.map((methods, i) => (

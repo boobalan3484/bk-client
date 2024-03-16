@@ -4,7 +4,8 @@ import logo from '../../Assets/hero/logo.png'
 const Brand = () => {
   return (
     <>
-      <a href="/" className='flex items-center gap-2'>
+      <a href="/" className='flex items-center gap-2' data-aos="fade-down"
+        >
         <img
           src={logo}
           alt="Float UI logo"

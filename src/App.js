@@ -3,6 +3,9 @@ import Header from './Layout/Header';
 // import PageRoutes from './PageRoutes';
 import { React, useState, useEffect } from 'react'
 
+import AOS from 'aos'
+import "aos/dist/aos.css"
+ 
 function App() {
 
   const [scrolling, setScrolling] = useState(false);
@@ -46,6 +49,14 @@ function App() {
       window.removeEventListener('scroll', handleNavScroll);
     };
   }, [scrollTop]);
+
+
+  useEffect(()=>{
+    AOS.init({
+    offset: 100,
+    duration: 1800,
+  })
+},[])
 
   return (
     <div className='App'>
