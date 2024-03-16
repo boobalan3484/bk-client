@@ -7,11 +7,10 @@ const Brand = () => {
       <a href="/" className='flex items-center gap-2'>
         <img
           src={logo}
-          // width={70}
           alt="Float UI logo"
           className='object-cover w-20'
         />
-        <p className='text-base font-bold tracking-wide text-indigo-900'>
+        <p className=' text-sm md:text-[15px] lg:text-base font-bold tracking-wide text-gray-900'>
           BOHAR KARATE TRAINING SCHOOL
         </p>
       </a>

@@ -20,8 +20,8 @@ const Hero = () => {
             Martial Arts Reg. No. Tamil Nadu. 148/2023, Chennai,
             <br />Periyamanali. PIN - 637 410.
           </p>
-          <button className="outline-none bg-gray-700 text-white text-center px-4 py-3 rounded-full shadow w-full ring-offset-2 ring-gray-700 focus:ring-2  sm:w-auto">
-            Get started
+          <button className="outline-none bg-gray-600 text-white text-center px-5 py-2 rounded-full shadow w-full ring-offset-2 ring-gray-600 focus:ring-2  sm:w-auto">
+            Join us
           </button>
         </div>
 

@@ -1,6 +1,5 @@
 import Meditation from './Assets/programs/Meditation.jpg'
 import Nunchack from './Assets/programs/Nunchack.png'
-// import Karate from './Assets/programs/Shotokan-karate.png'
 import Karate from './Assets/programs/Karate.jpg'
 import Silambam from './Assets/programs/Silambam.jpg'
 import Varmam from './Assets/programs/Varmam.png'
@@ -20,31 +19,31 @@ export const content = {
     programData: [
         {
             title: 'Shotokan Karate',
-            description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto explicabo non quas impedit exercitationem suscipit praesentium tempora dicta, facilis nihil amet deserunt delectus ut, provident, molestias odio laudantium voluptates velit!",
+            description: "Elevate your martial arts journey in Shotokan Karate, our dojo offers expert instruction for all skill levels. Experience the tradition, discipline, and camaraderie of authentic karate training. Join our community today to unlock your full potential, both on and off the mat.",
             image: Karate,
             link: '',
         },
         {
             title: 'Nunchack',
-            description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto explicabo non quas impedit exercitationem suscipit praesentium tempora dicta, facilis nihil amet deserunt delectus ut, provident, molestias odio laudantium voluptates velit!",
+            description: "Dive into the art of nunchaku with expert guidance from seasoned instructors. Explore the rich history and dynamic techniques of this iconic martial arts weapon. Join our community to master your skills, enhance coordination, and unleash the power of the nunchuck. Start your journey today!",
             image: Nunchack,
             link: ''
         },
         {
             title: 'Silambam',
-            description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto explicabo non quas impedit exercitationem suscipit praesentium tempora dicta, facilis nihil amet deserunt delectus ut, provident, molestias odio laudantium voluptates velit!",
+            description: " Immerse yourself in the ancient art of Silambam, a traditional Indian martial art. Our experienced instructors offer comprehensive training in staff combat techniques, fostering strength, agility, and mental focus. Join our vibrant community to explore this dynamic martial art and unlock your full potential. Begin your journey today!",
             image: Silambam,
             link: ''
         },
         {
             title: 'Yoga & Meditation',
-            description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto explicabo non quas impedit exercitationem suscipit praesentium tempora dicta, facilis nihil amet deserunt delectus ut, provident, molestias odio laudantium voluptates velit!",
+            description: "Dive into the practice of yoga and meditation with our expert instructors. Discover inner peace, improve flexibility, and enhance mindfulness through a variety of classes tailored to all levels. Join our supportive community and embark on your journey to holistic well-being today.",
             image: Meditation,
             link: ''
         },
         {
             title: 'Varmam',
-            description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto explicabo non quas impedit exercitationem suscipit praesentium tempora dicta, facilis nihil amet deserunt delectus ut, provident, molestias odio laudantium voluptates velit!",
+            description: "Explore the intricate art of Varmam, an ancient Indian practice blending pressure points, energy flow, and combat techniques. Our experienced instructors guide you through this profound discipline, fostering wellness, self-defense skills, and spiritual growth. Join us today.",
             image: Varmam,
             link: ''
         },
@@ -174,8 +173,8 @@ export const content = {
                             <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
                         </svg>
                     ,
-                    contact: "Support@example.com",
-                    link: 'https://mailto/support@example.com'
+                    contact: "boharkaratetrainingschool@gmail.com",
+                    link: 'https://mailto/boharkaratetrainingschool@gmail.com'
 
                 },
                 {

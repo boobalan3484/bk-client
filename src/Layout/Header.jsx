@@ -6,8 +6,6 @@ const Header = ({ navScroll, navStyle, navPadding, navText }) => {
         <NavBar
             navScroll={navScroll}
             navStyle={navStyle}
-            navPadding={navPadding}
-            navText={navText}
         />
     )
 }

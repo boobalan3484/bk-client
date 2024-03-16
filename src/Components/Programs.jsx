@@ -9,10 +9,9 @@ const Programs = () => {
     return (
         <section id='programs' className="py-14 pt-20">
             <div className="max-w-screen-xl mx-auto px-4 md:px-8">
-                <div className="max-w-md">
+                <div className="max-w-xl">
                     <h1 className="text-gray-800 text-3xl font-semibold sm:text-4xl tracking-wide">Martial Art Programs</h1>
-                    {/* <p className="text-gray-600 mt-2">Extend and automate your workflow by using integrations for your favorite tools.</p> */}
-
+                    <p className="text-gray-600 mt-2">Discover the physical, mental, and spiritual benefits of this ancient martial art in a supportive and welcoming community.</p>
                 </div>
                 <ul className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3 group/list">
                     {
@@ -24,13 +23,13 @@ const Programs = () => {
                                         <img src={item.image} alt={item.title} loading="lazy" className='h-36' />
 
                                         <h4 className="text-gray-800 font-semibold">{item.title}</h4>
-                                        <p className="text-gray-600 text-sm text-justify">{item.description}</p>
+                                        <p className="text-gray-600 text-sm text-justify">{item.description.length >= 260 ? item.description.slice(0, 257)+' ...' : item.description}</p>
                                     </div>
                                     {/* <button className="text-gray-700 text-sm border rounded-lg px-3 py-2 duration-150 hover:bg-gray-100">Connect</button> */}
                                 </div>
                                 <div className="py-5 px-4  text-center  ">
                                     <a href=' ' className="text-indigo-600 hover:text-indigo-500 text-sm font-semibold ">
-                                        Learn more
+                                        Know more
                                         <span className='inline-block'>
                                             <IoIosArrowRoundUp className=' rotate-45 text-lg transform translate-x-0 translate-y-[5px] group-hover/a:translate-y-[2px] group-hover/a:translate-x-[3px] transition-all duration-150' />
                                         </span>

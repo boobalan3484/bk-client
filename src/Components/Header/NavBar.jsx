@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Brand from './Brand'
 import NavLinks from './NavLinks'
 
-const NavBar = ({ navScroll, navStyle, navPadding, navText }) => {
+const NavBar = ({ navScroll, navStyle }) => {
 
   const [active, setActive] = useState(false)
 
@@ -18,12 +18,12 @@ const NavBar = ({ navScroll, navStyle, navPadding, navText }) => {
 
         <div className="items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8">
 
-          <div className={`flex items-center justify-between ${navPadding} py-[2px]  md:block`}>
+          <div className={`flex items-center justify-between py-[2px]  md:block`}>
 
             <Brand />
 
             <div className="md:hidden">
-              <button className="text-gray-500 hover:text-gray-800"
+              <button className="text-gray-800 hover:text-gray-100"
                 onClick={() => handleNavActive()}
               >
                 {
@@ -44,9 +44,7 @@ const NavBar = ({ navScroll, navStyle, navPadding, navText }) => {
 
           <div className={`flex-1 pb-3 mt-8 md:block md:pb-0 md:mt-0 ${active ? 'block' : 'hidden'}`}>
 
-            <NavLinks
-            // navText={navText}
-            />
+            <NavLinks />
 
           </div>
 
