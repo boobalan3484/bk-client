@@ -9,16 +9,9 @@ const Programs = () => {
     return (
         <section id='programs' className="py-14 pt-20">
             <div className="max-w-screen-xl mx-auto px-4 md:px-8">
-<<<<<<< HEAD
                 <div className="max-w-xl">
                     <h1 className="text-gray-800 text-3xl font-semibold sm:text-4xl tracking-wide">Martial Art Programs</h1>
                     <p className="text-gray-600 mt-2">Discover the physical, mental, and spiritual benefits of this ancient martial art in a supportive and welcoming community.</p>
-=======
-                <div className="max-w-md" data-aos="zoom-in">
-                    <h1 className="text-gray-800 text-3xl font-semibold sm:text-4xl tracking-wide" >Martial Art Programs</h1>
-                    <p className="text-gray-600 mt-2">Extend and automate your workflow by using integrations for your favorite tools.</p>
-
->>>>>>> 0320c9712fb5749729f03c6a569aa860182a3ff9
                 </div>
                 <ul className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3 group/list">
                     {

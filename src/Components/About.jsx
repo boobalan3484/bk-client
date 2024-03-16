@@ -12,15 +12,8 @@ const About = () => {
                     <div className="flex-1 sm:hidden lg:block"  data-aos="fade-right">
                         <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" className="md:max-w-lg sm:rounded-lg" alt="" />
                     </div>
-<<<<<<< HEAD
                     <div className="max-w-xl px-4 space-y-3 mt-6 sm:px-0 md:mt-0 lg:max-w-2xl group/a cursor-pointer">
 
-=======
-                    <div className="max-w-xl px-4 space-y-3 mt-6 sm:px-0 md:mt-0 lg:max-w-2xl" data-aos="fade-left">
-                        {/* <h3 className="text-indigo-600 font-semibold">
-                            Professional services
-                        </h3> */}
->>>>>>> 0320c9712fb5749729f03c6a569aa860182a3ff9
                         <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl tracking-wide">
                             About us
                         </h3>
