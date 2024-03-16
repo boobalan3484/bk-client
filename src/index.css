@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  border: 3px solid #eef3f7;
+  border-radius: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+}
+
+::selection {
+  @apply text-[#f0fdfa] bg-cyan-600;
+}
+
+#hero {
+  background-image: linear-gradient(to bottom, #8898d3 10%, white 100%);
+}
+
+.nav-bg {
+  background: linear-gradient(-225deg, #e3fdf595 0%, #ffe6fa98 100%);
+}
