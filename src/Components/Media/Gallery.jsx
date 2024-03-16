@@ -20,7 +20,9 @@ const Gallery = () => {
 
     return (
 
-        <section data-aos="zoom-in">
+        <section
+            data-aos="zoom-in"
+        >
             <div className="max-w-2xl mx-auto">
                 <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
                     Gallery

@@ -20,8 +20,8 @@ const Team = () => {
                     <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
                         {team.map((item, i) => (
                             <li key={i} className="flex gap-4 items-center"
-                            data-aos="fade-left"
-              data-aos-delay ={i*400}
+                                data-aos="zoom-in"
+                                data-aos-delay={i * 400}
                             >
                                 <div className="flex-none w-24 h-24">
                                     <img
