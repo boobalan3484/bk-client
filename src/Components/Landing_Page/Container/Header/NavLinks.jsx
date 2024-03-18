@@ -25,7 +25,7 @@ const NavLinks = () => {
               spy={true}
               offset={0}
               key={i}
-              className="md:block flex justify-center tracking-wide font-semibold hover:drop-shadow-sm cursor-pointer hover:text-indigo-700 md:hover:!opacity-100 md:group-hover/list:opacity-50 ">
+              className="md:block flex justify-center tracking-wide font-semibold hover:drop-shadow-sm cursor-pointer hover:text-indigo-900 md:hover:!opacity-100 md:group-hover/list:opacity-50 ">
               {item.title.toUpperCase()}
             </Link>
           </li>

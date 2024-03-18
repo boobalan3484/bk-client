@@ -3,6 +3,8 @@ import Nunchack from '../Assets/programs/Nunchack.png'
 import Karate from '../Assets/programs/Karate.jpg'
 import Silambam from '../Assets/programs/Silambam.jpg'
 import Varmam from '../Assets/programs/Varmam.png'
+import YogaHeader from "../Assets/programs/Yoga/yogaheader.jpg";
+import YogaSection from "../Assets/programs/Yoga/yoga1.jpg";
 
 import { FaFacebookF, FaXTwitter, FaInstagram, FaYoutube } from "react-icons/fa6";
 
@@ -18,34 +20,71 @@ export const content = {
 
     programData: [
         {
+            id: 1,
             title: 'Shotokan Karate',
             description: "Elevate your martial arts journey in Shotokan Karate, our dojo offers expert instruction for all skill levels. Experience the tradition, discipline, and camaraderie of authentic karate training. Join our community today to unlock your full potential, both on and off the mat.",
             image: Karate,
-            link: '',
+            url: 'karate',
+
+            img1: YogaHeader,
+            img2: YogaSection,
+            para1: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel veniam molestias eum ratione commodi inventore assumenda exercitationem atque necessitatibus, iusto, amet, expedita doloremque alias. Voluptatum facilis voluptatem fugiat soluta in nemo eaque recusandae maxime exercitationem! Atque blanditiis, voluptatem facere dolores minima asperiores repellendus ratione doloremque!",
+            para2: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel veniam molestias eum ratione commodi inventore assumenda exercitationem atque necessitatibus, iusto, amet, expedita doloremque alias. Voluptatum facilis voluptatem fugiat soluta in nemo eaque recusandae maxime exercitationem! Atque blanditiis, voluptatem facere dolores minima asperiores repellendus ratione doloremque!",
+            para3: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel veniam molestias eum ratione commodi inventore assumenda exercitationem atque necessitatibus, iusto, amet, expedita doloremque alias. Voluptatum facilis voluptatem fugiat soluta in nemo eaque recusandae maxime exercitationem! Atque blanditiis, voluptatem facere dolores minima asperiores repellendus ratione doloremque!",
+            para4: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel veniam molestias eum ratione commodi inventore assumenda exercitationem atque necessitatibus, iusto, amet, expedita doloremque alias. Voluptatum facilis voluptatem fugiat soluta in nemo eaque recusandae maxime exercitationem! Atque blanditiis, voluptatem facere dolores minima asperiores repellendus ratione doloremque!",
+
         },
         {
+            id: 2,
             title: 'Nunchack',
             description: "Dive into the art of nunchaku with expert guidance from seasoned instructors. Explore the rich history and dynamic techniques of this iconic martial arts weapon. Join our community to master your skills, enhance coordination, and unleash the power of the nunchuck. Start your journey today!",
             image: Nunchack,
-            link: ''
+            url: 'nunchack',
+            img1: YogaHeader,
+            img2: YogaSection,
+            para1: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel veniam molestias eum ratione commodi inventore assumenda exercitationem atque necessitatibus, iusto, amet, expedita doloremque alias. Voluptatum facilis voluptatem fugiat soluta in nemo eaque recusandae maxime exercitationem! Atque blanditiis, voluptatem facere dolores minima asperiores repellendus ratione doloremque!",
+            para2: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel veniam molestias eum ratione commodi inventore assumenda exercitationem atque necessitatibus, iusto, amet, expedita doloremque alias. Voluptatum facilis voluptatem fugiat soluta in nemo eaque recusandae maxime exercitationem! Atque blanditiis, voluptatem facere dolores minima asperiores repellendus ratione doloremque!",
+            para3: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel veniam molestias eum ratione commodi inventore assumenda exercitationem atque necessitatibus, iusto, amet, expedita doloremque alias. Voluptatum facilis voluptatem fugiat soluta in nemo eaque recusandae maxime exercitationem! Atque blanditiis, voluptatem facere dolores minima asperiores repellendus ratione doloremque!",
+            para4: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel veniam molestias eum ratione commodi inventore assumenda exercitationem atque necessitatibus, iusto, amet, expedita doloremque alias. Voluptatum facilis voluptatem fugiat soluta in nemo eaque recusandae maxime exercitationem! Atque blanditiis, voluptatem facere dolores minima asperiores repellendus ratione doloremque!",
         },
         {
+            id: 3,
             title: 'Silambam',
             description: " Immerse yourself in the ancient art of Silambam, a traditional Indian martial art. Our experienced instructors offer comprehensive training in staff combat techniques, fostering strength, agility, and mental focus. Join our vibrant community to explore this dynamic martial art and unlock your full potential. Begin your journey today!",
             image: Silambam,
-            link: ''
+            url: 'silambam',
+            img1: YogaHeader,
+            img2: YogaSection,
+            para1: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel veniam molestias eum ratione commodi inventore assumenda exercitationem atque necessitatibus, iusto, amet, expedita doloremque alias. Voluptatum facilis voluptatem fugiat soluta in nemo eaque recusandae maxime exercitationem! Atque blanditiis, voluptatem facere dolores minima asperiores repellendus ratione doloremque!",
+            para2: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel veniam molestias eum ratione commodi inventore assumenda exercitationem atque necessitatibus, iusto, amet, expedita doloremque alias. Voluptatum facilis voluptatem fugiat soluta in nemo eaque recusandae maxime exercitationem! Atque blanditiis, voluptatem facere dolores minima asperiores repellendus ratione doloremque!",
+            para3: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel veniam molestias eum ratione commodi inventore assumenda exercitationem atque necessitatibus, iusto, amet, expedita doloremque alias. Voluptatum facilis voluptatem fugiat soluta in nemo eaque recusandae maxime exercitationem! Atque blanditiis, voluptatem facere dolores minima asperiores repellendus ratione doloremque!",
+            para4: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel veniam molestias eum ratione commodi inventore assumenda exercitationem atque necessitatibus, iusto, amet, expedita doloremque alias. Voluptatum facilis voluptatem fugiat soluta in nemo eaque recusandae maxime exercitationem! Atque blanditiis, voluptatem facere dolores minima asperiores repellendus ratione doloremque!",
         },
         {
+            id: 4,
             title: 'Yoga & Meditation',
             description: "Dive into the practice of yoga and meditation with our expert instructors. Discover inner peace, improve flexibility, and enhance mindfulness through a variety of classes tailored to all levels. Join our supportive community and embark on your journey to holistic well-being today.",
             image: Meditation,
-            link: ''
+            url: 'yoga',
+            img1: YogaHeader,
+            img2: YogaSection,
+            para1: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel veniam molestias eum ratione commodi inventore assumenda exercitationem atque necessitatibus, iusto, amet, expedita doloremque alias. Voluptatum facilis voluptatem fugiat soluta in nemo eaque recusandae maxime exercitationem! Atque blanditiis, voluptatem facere dolores minima asperiores repellendus ratione doloremque!",
+            para2: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel veniam molestias eum ratione commodi inventore assumenda exercitationem atque necessitatibus, iusto, amet, expedita doloremque alias. Voluptatum facilis voluptatem fugiat soluta in nemo eaque recusandae maxime exercitationem! Atque blanditiis, voluptatem facere dolores minima asperiores repellendus ratione doloremque!",
+            para3: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel veniam molestias eum ratione commodi inventore assumenda exercitationem atque necessitatibus, iusto, amet, expedita doloremque alias. Voluptatum facilis voluptatem fugiat soluta in nemo eaque recusandae maxime exercitationem! Atque blanditiis, voluptatem facere dolores minima asperiores repellendus ratione doloremque!",
+            para4: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel veniam molestias eum ratione commodi inventore assumenda exercitationem atque necessitatibus, iusto, amet, expedita doloremque alias. Voluptatum facilis voluptatem fugiat soluta in nemo eaque recusandae maxime exercitationem! Atque blanditiis, voluptatem facere dolores minima asperiores repellendus ratione doloremque!",
         },
         {
+            id: 5,
             title: 'Varmam',
             description: "Explore the intricate art of Varmam, an ancient Indian practice blending pressure points, energy flow, and combat techniques. Our experienced instructors guide you through this profound discipline, fostering wellness, self-defense skills, and spiritual growth. Join us today.",
             image: Varmam,
-            link: ''
+            url: 'varmam',
+            img1: YogaHeader,
+            img2: YogaSection,
+            para1: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel veniam molestias eum ratione commodi inventore assumenda exercitationem atque necessitatibus, iusto, amet, expedita doloremque alias. Voluptatum facilis voluptatem fugiat soluta in nemo eaque recusandae maxime exercitationem! Atque blanditiis, voluptatem facere dolores minima asperiores repellendus ratione doloremque!",
+            para2: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel veniam molestias eum ratione commodi inventore assumenda exercitationem atque necessitatibus, iusto, amet, expedita doloremque alias. Voluptatum facilis voluptatem fugiat soluta in nemo eaque recusandae maxime exercitationem! Atque blanditiis, voluptatem facere dolores minima asperiores repellendus ratione doloremque!",
+            para3: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel veniam molestias eum ratione commodi inventore assumenda exercitationem atque necessitatibus, iusto, amet, expedita doloremque alias. Voluptatum facilis voluptatem fugiat soluta in nemo eaque recusandae maxime exercitationem! Atque blanditiis, voluptatem facere dolores minima asperiores repellendus ratione doloremque!",
+            para4: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel veniam molestias eum ratione commodi inventore assumenda exercitationem atque necessitatibus, iusto, amet, expedita doloremque alias. Voluptatum facilis voluptatem fugiat soluta in nemo eaque recusandae maxime exercitationem! Atque blanditiis, voluptatem facere dolores minima asperiores repellendus ratione doloremque!",
         },
     ],
 

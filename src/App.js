@@ -7,6 +7,7 @@ import LandingPage from './Pages/LandingPage'
 import NotFoundPage from './Pages/NotFoundPage'
 import ContactFormPage from './Pages/ContactFormPage'
 import AboutPage from './Pages/AboutPage'
+import ProgramLayout from './Pages/ProgramLayout'
 
 function App() {
 
@@ -21,9 +22,17 @@ function App() {
     <div className='App'>
       <Routes>
         <Route index path="/" element={<LandingPage />} />
+         
+        <Route path='programs' >
+          <Route path=":url" element={<ProgramLayout/>} />
+        </Route>
+
         <Route path="/about" element={<AboutPage />} />
+
         <Route path="/contact" element={<ContactFormPage />} />
+
         <Route path="*" element={<NotFoundPage />} />
+        
       </Routes>
     </div>
   );

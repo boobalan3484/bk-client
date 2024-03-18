@@ -10,7 +10,7 @@ const Brand = () => {
         <img
           src={logo}
           alt="Float UI logo"
-          className='object-cover w-20'
+          className='object-cover w-14 md:w-16 lg:w-[72px]'
         />
         <p className='hidden lg:flex lg:text-lg flex-wrap font-bold tracking-wide text-gray-900'>
         BOHAR KARATE TRAINING SCHOOL

@@ -13,7 +13,7 @@ const NavBar = ({ navScroll, navStyle }) => {
 
   return (
 
-    <header className={` py-1 sm:py-2 xl:py-[2px] fixed top-0 z-20 w-full transition-transform duration-300 ease-in-out ${navStyle} ${navScroll ? '-translate-y-full' : 'translate-y-0 '}    ${active && 'backdrop-blur-md'}`}>
+    <header className={`  fixed top-0 z-20 w-full transition-transform duration-300 ease-in-out ${navStyle} ${navScroll ? '-translate-y-full' : 'translate-y-0 '}    ${active && 'backdrop-blur-md'}`}>
 
       <nav className="  w-full md:static md:text-sm md:border-none">
 

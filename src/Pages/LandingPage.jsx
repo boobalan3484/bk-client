@@ -8,7 +8,7 @@ const LandingPage = () => {
 
     const [scrolling, setScrolling] = useState(false);
     const [scrollTop, setScrollTop] = useState(0);
-    const [navStyle, setNavStyle] = useState('');
+    const [navStyle, setNavStyle] = useState('py-2');
     // const [navPadding, setNavPadding] = useState('py-3 md:py-5');
     // const [navText, setNavText] = useState('text-base');
 
@@ -29,13 +29,13 @@ const LandingPage = () => {
 
 
                 if (currentScroll < heroSectionBottom) {
-                    setNavStyle(currentScroll > scrollTop ? ' shadow-sm backdrop-blur-sm' : 'shadow-none')
+                    setNavStyle(currentScroll > scrollTop ? ' shadow-sm backdrop-blur-sm' : 'shadow-none py-2')
                     // setNavPadding((currentScroll > scrollTop) ? 'py-2 ' : 'py-3 md:py-5 ')
                     // setNavText((currentScroll > scrollTop) ? 'text-base ' : 'text-base')
                     setScrolling((currentScroll))
                 }
                 else {
-                    setNavStyle(!(currentScroll > scrollTop) ? ' shadow-lg nav-bg backdrop-blur-md md:backdrop-blur-md' : 'shadow-sm nav-bg backdrop-blur-sm')
+                    setNavStyle(!(currentScroll > scrollTop) ? ' shadow-lg nav-bg backdrop-blur-md py-0' : 'shadow-sm nav-bg backdrop-blur-sm')
                     // setNavPadding((currentScroll > scrollTop) ? 'py-1' : 'py-2 md:py-3')
                     // setNavText((currentScroll > scrollTop) ? '' : '')
                 }

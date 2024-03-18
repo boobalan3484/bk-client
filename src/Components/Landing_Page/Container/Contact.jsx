@@ -19,7 +19,7 @@ const Contact = () => {
                             Let us know how we can help
                         </p>
                         <p>
-                            We’re here to help and answer any question you might have, We look forward to hearing from you! Please fill out the form, or us the contact information below .
+                            We’re here to help and answer any question you might have, We look forward to hearing from you! <br /> Please click the link below to fill out the form, or us the contact information below .
                         </p>
 
                         <div className="py-5 px-1  text-start  ">
