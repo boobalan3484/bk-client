@@ -1,5 +1,7 @@
 import React from 'react'
 import { IoIosArrowRoundUp } from "react-icons/io";
+import { Link } from 'react-router-dom';
+import AboutPage from '../../../Pages/AboutPage';
 
 
 const About = () => {
@@ -28,12 +30,12 @@ const About = () => {
                             Additionally, we organize various competitions in each program and issue dojo certificates to participants.
                         </p>
                         <div className="py-5 px-1  text-start  ">
-                            <a href=' ' className="text-indigo-600 hover:text-indigo-500 text-sm font-semibold ">
+                            <Link to='about' className="text-indigo-600 hover:text-indigo-500 text-sm font-semibold ">
                                 Know more
                                 <span className='inline-block'>
                                     <IoIosArrowRoundUp className=' rotate-45 text-lg transform translate-x-0 translate-y-[5px] group-hover/a:translate-y-[2px] group-hover/a:translate-x-[3px] transition-all duration-150' />
                                 </span>
-                            </a>
+                            </Link>
                         </div>
 
                     </div>

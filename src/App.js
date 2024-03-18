@@ -5,6 +5,8 @@ import AOS from 'aos'
 import "aos/dist/aos.css"
 import LandingPage from './Pages/LandingPage'
 import NotFoundPage from './Pages/NotFoundPage'
+import ContactFormPage from './Pages/ContactFormPage'
+import AboutPage from './Pages/AboutPage'
 
 function App() {
 
@@ -18,7 +20,9 @@ function App() {
   return (
     <div className='App'>
       <Routes>
-        <Route exact path="/" element={<LandingPage />} />
+        <Route index path="/" element={<LandingPage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/contact" element={<ContactFormPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </div>

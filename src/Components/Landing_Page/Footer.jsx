@@ -21,7 +21,7 @@ const Footer = () => {
                                         <div className="flex-none text-gray-400">
                                             {item.icon}
                                         </div>
-                                        <p>{item.contact}</p>
+                                        <p className='text-xs md:text-sm'>{item.contact}</p>
                                     </li>
                                 ))}
                             </ul>
@@ -37,14 +37,14 @@ const Footer = () => {
                                             <tr key={i}>
 
                                                 <td className="pr-[18px] py-2">
-                                                    <a href={item.link} target='_blank' rel="noreferrer noopener" className="text-blue-gray-600 hover:text-indigo-500  text-sm group">
+                                                    <a href={item.link} target='_blank' rel="noreferrer noopener" className="text-blue-gray-600 hover:text-indigo-500  text-xs md:text-sm group">
                                                         {item.name}
                                                         <span className='inline-block'>
                                                             <IoIosArrowRoundUp className=' rotate-45 text-lg transform translate-x-0 translate-y-[5px] group-hover:translate-y-[2px] group-hover:translate-x-[3px] transition-all duration-150' />
                                                         </span>
                                                     </a>
                                                 </td>
-                                                <td className=" py-2 ">{item.days}</td>
+                                                <td className="text-xs md:text-sm py-2 ">{item.days}</td>
                                             </tr>
                                         ))}
                                     </tbody>
@@ -55,7 +55,7 @@ const Footer = () => {
                 </div>
 
                 <div className="mt-8 items-center justify-between sm:flex">
-                    <div className="mt-4 sm:mt-0">
+                    <div className="mt-4 sm:mt-0 text-sm">
                         &copy; 2024 INFYREC All rights reserved.
                     </div>
                     <div className="mt-6 sm:mt-0">

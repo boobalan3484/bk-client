@@ -24,7 +24,7 @@ const NavBar = ({ navScroll, navStyle }) => {
             <Brand />
 
             <div className="md:hidden" data-aos="fade-down">
-              <button className="text-gray-800 hover:text-gray-100"
+              <button className="text-gray-800 hover:text-indigo-800"
                 onClick={() => handleNavActive()}
               >
                 {
