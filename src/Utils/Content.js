@@ -1,8 +1,8 @@
-import Meditation from './Assets/programs/Meditation.jpg'
-import Nunchack from './Assets/programs/Nunchack.png'
-import Karate from './Assets/programs/Karate.jpg'
-import Silambam from './Assets/programs/Silambam.jpg'
-import Varmam from './Assets/programs/Varmam.png'
+import Meditation from '../Assets/programs/Meditation.jpg'
+import Nunchack from '../Assets/programs/Nunchack.png'
+import Karate from '../Assets/programs/Karate.jpg'
+import Silambam from '../Assets/programs/Silambam.jpg'
+import Varmam from '../Assets/programs/Varmam.png'
 
 import { FaFacebookF, FaXTwitter, FaInstagram, FaYoutube } from "react-icons/fa6";
 

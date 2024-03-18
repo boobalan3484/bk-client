@@ -1,6 +1,6 @@
 import React, { Fragment, createElement } from 'react'
 import { IoIosArrowRoundUp } from "react-icons/io";
-import { content } from '../Content'
+import { content } from '../../Utils/Content'
 
 const Footer = () => {
 

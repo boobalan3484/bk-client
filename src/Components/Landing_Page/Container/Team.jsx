@@ -1,5 +1,5 @@
 import React from 'react'
-import { content } from '../Content'
+import { content } from '../../../Utils/Content'
 
 const Team = () => {
 

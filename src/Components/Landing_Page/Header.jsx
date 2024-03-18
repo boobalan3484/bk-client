@@ -1,5 +1,5 @@
 import React from 'react'
-import NavBar from '../Components/Header/NavBar'
+import NavBar from './Container/Header/NavBar'
 
 const Header = ({ navScroll, navStyle, navPadding, navText }) => {
     return (

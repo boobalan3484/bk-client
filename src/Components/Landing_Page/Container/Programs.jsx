@@ -1,5 +1,5 @@
 import React from 'react'
-import { content } from '../Content'
+import { content } from '../../../Utils/Content'
 import { IoIosArrowRoundUp } from "react-icons/io";
 
 const Programs = () => {
@@ -10,7 +10,7 @@ const Programs = () => {
         <section id='programs' className="py-14 pt-20">
             <div className="max-w-screen-xl mx-auto px-4 md:px-8">
                 <div className="max-w-xl" 
-                // data-aos="zoom-in"
+                data-aos="zoom-in"
                 >
                     <h1 className="text-gray-800 text-3xl font-semibold sm:text-4xl tracking-wide">Martial Art Programs</h1>
                     <p className="text-gray-600 mt-2">Discover the physical, mental, and spiritual benefits of this ancient martial art in a supportive and welcoming community.</p>

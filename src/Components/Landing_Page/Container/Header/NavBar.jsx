@@ -8,23 +8,22 @@ const NavBar = ({ navScroll, navStyle }) => {
 
   const handleNavActive = () => {
     setActive(!active)
+
   }
 
   return (
 
-    <header className={`py-4 lg:py-0 fixed top-0 z-20 w-full backdrop-blur-lg md:backdrop-blur-md transition-transform duration-300 ease-in-out ${navStyle} ${navScroll ? '-translate-y-full' : 'translate-y-0 '}`}
-
-    >
+    <header className={` py-1 sm:py-2 xl:py-[2px] fixed top-0 z-20 w-full transition-transform duration-300 ease-in-out ${navStyle} ${navScroll ? '-translate-y-full' : 'translate-y-0 '}    ${active && 'backdrop-blur-md'}`}>
 
       <nav className="  w-full md:static md:text-sm md:border-none">
 
         <div className="items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8">
 
-          <div className={`flex items-center justify-between py-[2px]  md:block`}>
+          <div className={`flex items-center justify-between md:block`}>
 
             <Brand />
 
-            <div className="md:hidden">
+            <div className="md:hidden" data-aos="fade-down">
               <button className="text-gray-800 hover:text-gray-100"
                 onClick={() => handleNavActive()}
               >
@@ -44,9 +43,10 @@ const NavBar = ({ navScroll, navStyle }) => {
 
           </div>
 
-          <div className={`flex-1 pb-3 mt-8 md:block md:pb-0 md:mt-0 ${active ? 'block' : 'hidden'}`}>
+          <div className={`flex-1 pb-3 mt-8 md:block md:pb-0 md:mt-0 ${active ? 'block backdrop-blur-md' : 'hidden '}`}>
 
-            <NavLinks />
+            <NavLinks
+            />
 
           </div>
 
