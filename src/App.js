@@ -9,6 +9,7 @@ import ContactFormPage from './Pages/ContactFormPage'
 import AboutPage from './Pages/AboutPage'
 import ProgramLayout from './Pages/ProgramLayout'
 
+
 function App() {
 
   useEffect(() => {
@@ -22,9 +23,8 @@ function App() {
     <div className='App'>
       <Routes>
         <Route index path="/" element={<LandingPage />} />
-         
         <Route path='programs' >
-          <Route path=":url" element={<ProgramLayout/>} />
+          <Route path=":id" element={<ProgramLayout />} />
         </Route>
 
         <Route path="/about" element={<AboutPage />} />
@@ -32,7 +32,7 @@ function App() {
         <Route path="/contact" element={<ContactFormPage />} />
 
         <Route path="*" element={<NotFoundPage />} />
-        
+
       </Routes>
     </div>
   );
