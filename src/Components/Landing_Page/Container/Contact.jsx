@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const Contact = () => {
 
     return (
-        <section className="py-14 pt-20" id='contact'>
+        <section id='contact' className="py-14 pt-20">
             <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
                 <div className="max-w-lg mx-auto gap-6 justify-between lg:flex lg:max-w-none">
                     <div className="max-w-lg space-y-3"
@@ -19,12 +19,12 @@ const Contact = () => {
                             Let us know how we can help
                         </p>
                         <p>
-                            We’re here to help and answer any question you might have, We look forward to hearing from you! <br /> Please click the link below to fill out the form, or us the contact information below .
+                            We’re here to help and answer any question you might have, We look forward to hearing from you! <br /> Please click the link below to fill out the form, or contact us the information below .
                         </p>
 
                         <div className="py-5 px-1  text-start  ">
                             <Link to='contact' className="text-indigo-600 hover:text-indigo-500 text-sm font-semibold ">
-                                Navigate to
+                                Reach out
                                 <span className='inline-block'>
                                     <IoIosArrowRoundUp className=' rotate-45 text-lg transform translate-x-0 translate-y-[5px] group-hover/a:translate-y-[2px] group-hover/a:translate-x-[3px] transition-all duration-150' />
                                 </span>

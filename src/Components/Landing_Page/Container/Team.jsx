@@ -13,7 +13,7 @@ const Team = () => {
                         Meet our team
                     </h3>
                     <p className="text-gray-600 mt-3">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy.
+                    We have a experienced instructors provide expert guidance for all levels, from beginners to advanced practitioners.
                     </p>
                 </div>
                 <div className="mt-12">

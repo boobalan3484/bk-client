@@ -1,14 +1,13 @@
 import React from 'react'
 import { IoIosArrowRoundUp } from "react-icons/io";
 import { Link } from 'react-router-dom';
-import AboutPage from '../../../Pages/AboutPage';
 
 
 const About = () => {
 
     return (
 
-        <section className="py-14 pt-20" id='about'>
+        <section id='about' className="py-14 pt-20" >
             <div className="max-w-screen-xl mx-auto md:px-8">
                 <div className="items-center gap-x-12 sm:px-4 md:px-0 lg:flex">
                     <div className="flex-1 sm:hidden lg:block"

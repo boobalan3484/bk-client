@@ -7,24 +7,16 @@ const Gallery = () => {
 
     const { images } = content
 
-    const navi = ({ setActiveIndex, activeIndex, length }) => (
-        <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
-            {new Array(length).fill("").map((_, i) => (
-                <span
-                    key={i}
-                    className={`hidden`}
-                    onClick={() => setActiveIndex(i)}
-                />
-            ))}
-        </div>
+    const navi = () => (
+        <span
+            className='hidden'
+        />
     )
 
     return (
 
-        <section
-            data-aos="zoom-in"
-        >
-            <div className="max-w-2xl mx-auto">
+        <>
+            <div className="max-w-xl" data-aos="zoom-in">
                 <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
                     Gallery
                 </h3>
@@ -32,10 +24,10 @@ const Gallery = () => {
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius, enim ex faucibus purus.
                 </p>
             </div>
-            <div className="mt-8  grid gap-y-8 gap-x-12 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="mt-8  grid gap-y-8 gap-x-12 sm:grid-cols-2 lg:grid-cols-3" >
                 {images.map((image, i) => (
-                    <Fragment key={i}>
-                        <Carousel loop={true} autoplay={true} className="rounded-xl " navigation={navi} nextArrow={navi} prevArrow={navi}>
+                    <Fragment key={i} >
+                        <Carousel loop={true} autoplay={true} className="rounded-xl " navigation={navi} nextArrow={navi} prevArrow={navi} data-aos="zoom-in" data-aos-delay='350'>
                             {image.set1.map((item) => (
                                 <img
                                     key={item.id}
@@ -45,7 +37,7 @@ const Gallery = () => {
                                 />
                             ))}
                         </Carousel>
-                        <Carousel loop={true} autoplay={true} className="rounded-xl " navigation={navi} nextArrow={navi} prevArrow={navi}>
+                        <Carousel loop={true} autoplay={true} className="rounded-xl " navigation={navi} nextArrow={navi} prevArrow={navi} data-aos="zoom-in" data-aos-delay='750'>
                             {image.set2.map((item) => (
                                 <img
                                     key={item.id}
@@ -55,7 +47,7 @@ const Gallery = () => {
                                 />
                             ))}
                         </Carousel>
-                        <Carousel loop={true} autoplay={true} className="rounded-xl " navigation={navi} nextArrow={navi} prevArrow={navi}>
+                        <Carousel loop={true} autoplay={true} className="rounded-xl " navigation={navi} nextArrow={navi} prevArrow={navi} data-aos="zoom-in" data-aos-delay='1000'>
                             {image.set3.map((item) => (
                                 <img
                                     key={item.id}
@@ -68,7 +60,7 @@ const Gallery = () => {
                     </Fragment>
                 ))}
             </div>
-        </section>
+        </>
 
     );
 }

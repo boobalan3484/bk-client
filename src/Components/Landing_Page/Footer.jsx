@@ -8,7 +8,7 @@ const Footer = () => {
 
     return (
 
-        <footer className='sticky nav-bg backdrop-blur-md ' style={{ boxShadow: '0 -8px 15px -3px #e0e0e0' }}  >
+        <footer className='sticky bg-Nav backdrop-blur-md ' style={{ boxShadow: '0 -8px 15px -3px #e0e0e0' }}  >
             
             <section className="text-gray-800  px-4 py-5 max-w-screen-xl mx-auto md:px-8" >
                 

@@ -1,20 +1,19 @@
 import React from "react";
 import { useParams } from 'react-router-dom';
-
 import { content } from '../Utils/Content'
+import NotFoundPage from "./NotFoundPage";
 
-const Yoga = () => {
+
+const ProgramLayout = () => {
 
 	const { url } = useParams()
 
 	const { programData } = content
 
-
 	const program = programData.find(program => program.url === url);
 
-
 	if (!program) {
-		return <div>Program not found</div>;
+		return <> <NotFoundPage /> </>
 	}
 
 	return (
@@ -35,7 +34,7 @@ const Yoga = () => {
 				</div>
 				<div className="w-full  my-4">
 					<p className="w-[80%]  m-auto lg:text-2xl font-semibold  text-center md:text-xl sm:text-xl">
-						{program.para1}
+						{program.description}
 					</p>
 				</div>
 
@@ -79,4 +78,4 @@ const Yoga = () => {
 	);
 };
 
-export default Yoga;
+export default ProgramLayout;

@@ -94,116 +94,130 @@ const ContactFormPage = () => {
   }
 
   return (
-    <div>
-      <section className="" id='contact'>
-        <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8 ">
-          <div className="max-w-lg mx-auto gap-12 justify-center flex lg:max-w-none">
-            <div className="flex-1 mt-12 sm:max-w-lg lg:max-w-md">
-              <form
-                onSubmit={handleSubmit}
-                className="space-y-5 divide-slate-600 border-2  rounded-lg p-5"
-              >
-                <div>
-                  <label className="font-medium">
-                    Full name
-                  </label>
-                  <input
-                    type="text"
-                    required
-                    placeholder='Example: John Doe'
-                    className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
-                    id='name'
-                    name='name'
-                    onChange={(e) => handleChange(e)}
-                    value={data.name}
-                  />
-                </div>
-                <div>
-                  <label className="font-medium">
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    required
-                    placeholder='Example: support@example.com'
-                    className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
-                    id='email'
-                    name='email'
-                    onChange={(e) => handleChange(e)}
-                    value={data.email}
-                  />
-                </div>
-                <div>
-                  <label className="font-medium">
-                    age
-                  </label>
-                  <input
-                    type="text"
-                    required
-                    placeholder='Example:18'
-                    className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
-                    id='age'
-                    name='age'
-                    onChange={(e) => handleChange(e)}
-                    value={data.age}
-                  />
-                </div>
-                <div>
-                  <label className="font-medium">
-                    district
-                  </label>
-                  <input
-                    type="text"
-                    required
-                    placeholder='Example: place name'
-                    className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
-                    id='district'
-                    name='district'
-                    onChange={(e) => handleChange(e)}
-                    value={data.district}
-                  />
-                </div>
-                <div>
-                  <label className="font-medium">
-                    Phone Number
-                  </label>
-                  <input
-                    type="text"
-                    required
-                    placeholder='Example: 1234567890'
-                    className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
-                    id='phoneNumber'
-                    name='phoneNumber'
-                    onChange={(e) => handleChange(e)}
-                    value={data.phoneNumber}
-                  />
-                </div>
-                <div>
-                  <label className="font-medium">
-                    Message
-                  </label>
-                  <textarea
-                    required
-                    placeholder='write your query'
-                    className="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
-                    id='message'
-                    name='message'
-                    onChange={(e) => handleChange(e)}
-                    value={data.message}
-                  ></textarea>
-                </div>
-                <button
-                  className="w-full px-4 py-2 text-white font-medium bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-600 rounded-lg duration-150"
-                >
-                  Submit
-                </button>
+    <section id='contact' className="min-h-screen w-full grid place-content-center bg-blue-gray-100/10" >
+      
+      <main className=" h-full backdrop-blur-md z-[999] rounded-lg sm:max-w-lg lg:max-w-md shadow-md shadow-blue-gray-500/75 bg-Nav">
+        
+        <form
+          onSubmit={handleSubmit}
+          className=" divide-slate-600  rounded-lg"
+        >
 
-              </form>
-            </div>
+          <div className=' text-[#4e6ddb] p-5 text-center rounded-t-lg'>
+            <h3 className='text-xl tracking-wider font-bold'>
+              CONTACT FORM
+            </h3>
           </div>
-        </div>
-      </section>
-    </div>
+
+          <div className='space-y-4 p-5'>
+
+            <div>
+              <label className="font-medium">
+                Full Name
+              </label>
+              <input
+                type="text"
+                required
+                placeholder='Example: John Doe'
+                pattern=''
+                className="w-full mt-1 px-3 py-1 text-gray-700 bg-transparent outline-none border border-blue-gray-200 focus:border-indigo-600 shadow-sm rounded-md"
+                id='name'
+                name='name'
+                onChange={(e) => handleChange(e)}
+                value={data.name}
+              />
+            </div>
+
+            <div>
+              <label className="font-medium">
+                Email
+              </label>
+              <input
+                type="email"
+                required
+                placeholder='Example: support@example.com'
+                className="w-full mt-1 px-3 py-1 text-gray-700 bg-transparent outline-none border border-blue-gray-200 focus:border-indigo-600 shadow-sm rounded-md"
+                id='email'
+                name='email'
+                onChange={(e) => handleChange(e)}
+                value={data.email}
+              />
+            </div>
+            
+            <div>
+              <label className="font-medium">
+                Mobile Number
+              </label>
+              <input
+                type="text"
+                required
+                pattern=''
+                placeholder='Example: +91 98******00'
+                className="w-full mt-1 px-3 py-1 text-gray-700 bg-transparent outline-none border border-blue-gray-200 focus:border-indigo-600 shadow-sm rounded-md"
+                id='phoneNumber'
+                name='phoneNumber'
+                onChange={(e) => handleChange(e)}
+                value={data.phoneNumber}
+              />
+            </div>
+
+            <div>
+              <label className="font-medium">
+                District
+              </label>
+              <input
+                type="text"
+                required
+                placeholder='Example: Salem'
+                className="w-full mt-1 px-3 py-1 text-gray-700 bg-transparent outline-none border border-blue-gray-200 focus:border-indigo-600 shadow-sm rounded-md"
+                id='district'
+                name='district'
+                onChange={(e) => handleChange(e)}
+                value={data.district}
+              />
+            </div>
+            
+            <div>
+              <label className="font-medium">
+                Age
+              </label>
+              <input
+                type="text"
+                required
+                placeholder='Example:18'
+                className="w-full mt-1 px-3 py-1 text-gray-700 bg-transparent outline-none border border-blue-gray-200 focus:border-indigo-600 shadow-sm rounded-md"
+                id='age'
+                name='age'
+                onChange={(e) => handleChange(e)}
+                value={data.age}
+              />
+            </div>
+            
+            <div>
+              <label className="font-medium">
+                Message
+              </label>
+              <textarea
+                required
+                placeholder='Write your query....'
+                className="w-full mt-1 h-28 px-3 py-1 resize-none appearance-none bg-transparent outline-none border border-blue-gray-200 focus:border-indigo-600 shadow-sm rounded-md"
+                id='message'
+                name='message'
+                onChange={(e) => handleChange(e)}
+                value={data.message}
+              >
+              </textarea>
+            </div>
+            
+            <button className="w-full px-4 py-2 text-white font-medium bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-600 rounded-md duration-150">
+              Submit
+            </button>
+          
+          </div>
+
+        </form>
+      </main>
+    </section>
   )
 }
 

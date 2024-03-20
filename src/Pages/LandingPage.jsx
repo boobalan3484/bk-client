@@ -35,7 +35,7 @@ const LandingPage = () => {
                     setScrolling((currentScroll))
                 }
                 else {
-                    setNavStyle(!(currentScroll > scrollTop) ? ' shadow-lg nav-bg backdrop-blur-md py-0' : 'shadow-sm nav-bg backdrop-blur-sm')
+                    setNavStyle(!(currentScroll > scrollTop) ? ' shadow-lg bg-Nav backdrop-blur-md py-0' : 'shadow-sm bg-Nav backdrop-blur-sm')
                     // setNavPadding((currentScroll > scrollTop) ? 'py-1' : 'py-2 md:py-3')
                     // setNavText((currentScroll > scrollTop) ? '' : '')
                 }

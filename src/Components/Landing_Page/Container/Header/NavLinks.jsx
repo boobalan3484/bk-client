@@ -13,7 +13,7 @@ const NavLinks = () => {
         nav.map((item, i) =>
         (
           <li key={i} className={`text-blue-gray-800 `}
-            data-aos="fade-down"
+
           >
             {/* <a href={item.path} className=" md:block flex justify-center tracking-wide font-semibold hover:drop-shadow-sm">
                 {item.title.toUpperCase()}
@@ -21,11 +21,14 @@ const NavLinks = () => {
             <Link to={`${item.path}`}
               activeClass='active'
               smooth={true}
-              duration={300}
+              duration={600}
               spy={true}
               offset={0}
               key={i}
-              className="md:block flex justify-center tracking-wide font-semibold hover:drop-shadow-sm cursor-pointer hover:text-indigo-900 md:hover:!opacity-100 md:group-hover/list:opacity-50 ">
+              className="md:block flex justify-center tracking-wide font-semibold hover:drop-shadow-sm cursor-pointer hover:text-indigo-900 md:hover:!opacity-100 md:group-hover/list:opacity-40 "
+              data-aos="fade-down"
+              data-aos-delay={i * 200}
+            >
               {item.title.toUpperCase()}
             </Link>
           </li>
