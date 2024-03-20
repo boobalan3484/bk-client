@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from "react";
 import { useParams } from 'react-router-dom';
 import { content } from '../Utils/Content'
@@ -12,24 +11,6 @@ const ProgramLayout = () => {
 	const { programData } = content
 
 	const program = programData.find(program => program.url === url);
-=======
-import React, {useEffect, useState} from "react";
-import {useParams} from "react-router-dom";
-
-import {content} from "../Utils/Content";
-
-const Yoga = () => {
-	const {id} = useParams();
-	const {programData} = content;
-	const [program, setProgram] = useState({});
-
-	useEffect(() => {
-		const programFilter = programData.filter((item) => {
-			return item.id == id;
-		});
-		setProgram(programFilter[0]);
-	}, [id, programData]);
->>>>>>> 4910340af867a6e93fc58712f60b58ca6478fa25
 
 	if (!program) {
 		return <> <NotFoundPage /> </>
@@ -53,11 +34,7 @@ const Yoga = () => {
 				</div>
 				<div className="w-full  my-4">
 					<p className="w-[80%]  m-auto lg:text-2xl font-semibold  text-center md:text-xl sm:text-xl">
-<<<<<<< HEAD
 						{program.description}
-=======
-						{program?.para1}
->>>>>>> 4910340af867a6e93fc58712f60b58ca6478fa25
 					</p>
 				</div>
 
