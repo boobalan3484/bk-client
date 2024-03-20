@@ -22,9 +22,9 @@ const PageRoutes = () => {
 
             </Route>
 
-            <Route path="/about" element={<AboutPage />} />
+            <Route path="about" element={<AboutPage />} />
 
-            <Route path="/contact" element={<ContactFormPage />} />
+            <Route path="contact" element={<ContactFormPage />} />
 
             <Route path="*" element={<NotFoundPage />} />
 
