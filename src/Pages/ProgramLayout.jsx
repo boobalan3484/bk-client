@@ -1,4 +1,5 @@
-import React from "react";
+// import React from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from 'react-router-dom';
 import { content } from '../Utils/Content'
 import NotFoundPage from "./NotFoundPage";
@@ -12,8 +13,20 @@ const ProgramLayout = () => {
 
 	const program = programData.find(program => program.url === url);
 
+
+	// const { id } = useParams();
+	// const { programData } = content;
+	// const [program, setProgram] = useState({});
+
+	// useEffect(() => {
+	// 	const programFilter = programData.filter((item) =>
+	// 		item.id == id
+	// 	);
+	// 	setProgram(programFilter[0]);
+	// }, [id, programData]);
+
 	if (!program) {
-		return <> <NotFoundPage /> </>
+		return <NotFoundPage />
 	}
 
 	return (
@@ -63,7 +76,7 @@ const ProgramLayout = () => {
 						<div className="lg:w-[15%] h-[200px] md:w-[20%] sm:w-[20%]">
 							<img
 								className="w-[full] h-full"
-								src={program?.img3}
+								src={program.img3}
 								alt="yogaboy"
 							/>
 						</div>

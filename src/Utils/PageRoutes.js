@@ -18,6 +18,7 @@ const PageRoutes = () => {
             <Route path='programs' >
 
                 <Route path=":url" element={<ProgramLayout />} />
+                {/* <Route path=":id" element={<ProgramLayout />} /> */}
 
             </Route>
 

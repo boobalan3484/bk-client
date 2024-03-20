@@ -46,7 +46,8 @@ const Programs = () => {
 							</div>
 							<div className="py-5 px-4  text-center  ">
 								<Link
-									to={`/programs/${item.id}`}
+									to={`/programs/${item.url}`}
+									// to={`/programs/${item.id}`}
 									className="text-indigo-600 hover:text-indigo-500 text-sm font-semibold "
 								>
 									Know more

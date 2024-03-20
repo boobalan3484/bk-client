@@ -32,7 +32,6 @@ export const content = {
             description: "Elevate your martial arts journey in Shotokan Karate, our dojo offers expert instruction for all skill levels. Experience the tradition, discipline, and camaraderie of authentic karate training. Join our community today to unlock your full potential, both on and off the mat.",
             image: Karate,
             url: 'karate',
-
             img1: Karate_Cover,
             img2: Karate_Right,
             img3: YogaSection,
