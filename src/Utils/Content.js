@@ -10,8 +10,23 @@ import Karate_Cover from "../Assets/programs/karate_cover.png";
 import Silambam_Cover from "../Assets/programs/silambam_cover.png";
 import nanchaku_Cover from "../Assets/programs/nunchaku_cover.png";
 import nanchaku_Right from "../Assets/programs/nunchaku.png";
-
 import YogaSection from "../Assets/programs/Yoga/yoga1.jpg";
+
+import img1 from '../Assets/Gallery/img1.jpg'
+import img2 from '../Assets/Gallery/img2.jpg'
+import img3 from '../Assets/Gallery/img3.jpg'
+import img4 from '../Assets/Gallery/img4.jpg'
+import img5 from '../Assets/Gallery/img5.jpg'
+import img6 from '../Assets/Gallery/img6.jpg'
+import img7 from '../Assets/Gallery/img7.jpg'
+import img8 from '../Assets/Gallery/img8.jpg'
+import img9 from '../Assets/Gallery/img9.jpg'
+import img10 from '../Assets/Gallery/img10.jpg'
+import img11 from '../Assets/Gallery/img11.jpg'
+import img12 from '../Assets/Gallery/img12.jpg'
+import img13 from '../Assets/Gallery/img13.jpg'
+import img14 from '../Assets/Gallery/img14.jpg'
+import img15 from '../Assets/Gallery/img15.jpg'
 
 import { FaFacebookF, FaXTwitter, FaInstagram, FaYoutube } from "react-icons/fa6";
 
@@ -35,12 +50,10 @@ export const content = {
             img1: Karate_Cover,
             img2: Karate_Right,
             img3: YogaSection,
-
             para1: "The 19th century witnessed cultural exchange between Okinawa and China, with martial artists traveling to China to study martial arts and bringing back new techniques and insights. This exchange deepened the integration of Chinese martial arts principles into Okinawan martial arts, contributing to the evolution of karate.",
             para2: "Karate's journey to mainland Japan began in the early 20th century when Funakoshi Gichin, a prominent Okinawan karate master, introduced the art to Japan. As karate gained popularity, different styles and organizations emerged, each with its unique approach and emphasis. Styles such as Wado-ryu, Goju-ryu, and Shito-ryu proliferated, each with its distinctive techniques, kata , and training methods.",
             para3: "Today, karate is practiced by millions of people worldwide, encompassing a diverse community of practitioners ranging from children to seniors.Despite these stylistic variations, the core principles of karate remained consistent: discipline, respect,humility, and the pursuit of self-improvement. Karate has also evolved into a competitive sport, with international tournaments such as the World Karate Championships showcasing the skills of top athletes.",
             para4: "Whether you're a beginner looking to start your martial arts journey to deepen your skills, karate offers a rewarding path of self-discovery and personal growth. Join us as we explore the history, techniques, and philosophy of karate, and discover the power and beauty of this timeless martial art. Embark on this journey with us and unlock the secrets of karate as we strive for excellence in body, mind, and spirit.",
-
         },
         {
             id: 2,
@@ -51,7 +64,6 @@ export const content = {
             img1: nanchaku_Cover,
             img2: nanchaku_Right,
             img3: YogaSection,
-
             para1: "Nunchaku, also known as nunchucks or chainsticks, originated in Okinawa, Japan, where it was originally used as a farm tool for threshing rice. Over time, Okinawan martial artists adapted the nunchaku into a weapon for self-defense and combat, incorporating it into their training regimens and martial arts systems.",
             para2: "The nunchaku consists of two wooden or metal sticks connected by a chain or cord. The sticks, typically made of hardwood such as oak or hickory, are cylindrical in shape and measure around 12 to 14 inches in length. The chain or cord, usually made of metal or nylon, allows for fluid and rapid movements, making the nunchaku a formidable weapon in the hands of a skilled practitioner",
             para3: " One of the key strengths of the nunchaku is its versatility and adaptability. While it is primarily used as a striking weapon, the nunchaku can also be employed for blocking, trapping, and grappling techniques. Its compact size and lightweight construction make it easy to carry and conceal, making it a practical option for self-defense in a variety of situations.",
@@ -66,8 +78,6 @@ export const content = {
             img1: Silambam_Cover,
             img2: silambam_Right,
             img3: YogaSection,
-
-
             para1: "Silambam is a traditional Indian martial art originating from Tamil Nadu.The history of Silambam can be traced back thousands of years, with references to staff fighting techniques found in ancient Tamil literature, such as the Sangam literature and the epic poem Silappatikaram. Over time, Silambam evolved from a form of combat training for warriors into a revered art form and a means of physical fitness, mental discipline, and cultural expression",
             para2: "The Silambam is typically made of bamboo or rattan. Practitioners wield the staff with precision and agility, employing a variety of strikes, blocks, thrusts, and spins.It emphasizes not only physical prowess but also mental focus, discipline, and spiritual development. Practitioners undergo rigorous training to master the techniques of Silambam, honing their reflexes, coordination, and timing.Silambam is not just a martial art but also a cultural tradition deeply intertwined with Tamil identity and heritage.",
             para3: " It is often performed during festivals, celebrations, and cultural events, serving as a symbol of Tamil pride and resilience. In recent years, Silambam has gained recognition beyond its traditional homeland, with practitioners and enthusiasts promoting its practice and preservation worldwide. Schools and academies dedicated to Silambam have been established in various countries, fostering cross-cultural exchange and appreciation for this ancient martial art.",
@@ -82,8 +92,6 @@ export const content = {
             img1: YogaHeader,
             img2: YogaSection,
             img3: YogaSection,
-
-
             para1: "Yoga is an ancient practice originating from India, has transcended centuries to become a globally recognized tool for physical, mental, and spiritual well-being.It is more than just physical postures or asanas. it's a comprehensive system encompassing breath control, meditation, ethical guidelines, and philosophical insights. The word 'yoga' itself means union, signifying the integration of body, mind, and spirit.",
             para2: " Pranayama, or breath control, is a fundamental aspect of yoga practice that is particularly relevant for martial artists. By learning to regulate and deepen the breath, practitioners can enhance their endurance, stamina, and energy levels, optimizing their performance during training and competition",
             para3: "It offers a pathway to self-discovery and self-realization. Through meditation and introspection, practitioners delve into the depths of their consciousness, uncovering their true nature beyond the fluctuations of the ego. Yoga philosophy teaches that we are all interconnected and part of a larger cosmic whole, fostering a sense of unity, compassion, and reverence for all life",
@@ -98,7 +106,6 @@ export const content = {
             img1: YogaHeader,
             img2: YogaSection,
             img3: YogaSection,
-
             para1: "Varmam is an ancient healing and martial art system originating from Tamil Nadu. combines elements of acupressure, traditional medicine, and martial techniques.Varmam points are believed to be located throughout the human body and correspond to specific organs, systems, and functions. By stimulating or manipulating these points through pressure, massage, or herbal remedies, Varmam practitioners aim to restore balance to the body's energy flow, alleviate pain, and promote healing. ",
             para2: "It is used to treat a wide range of ailments and injuries, from muscular strains and joint pain to more serious conditions.Varmam is also employed as a martial art, with practitioners utilizing their knowledge of varmam points for offensive and defensive purposes. Techniques targeting vulnerable varmam points can incapacitate opponents or cause various physiological effects.",
             para3: "Despite its ancient origins and deep cultural significance, Varmam remains relatively obscure outside of Tamil Nadu, with limited documentation and formalized training programs. However, efforts are underway to preserve and promote this ancient art form, with dedicated practitioners and scholars working to research, document, and transmit Varmam teachings to future generations.",
@@ -161,52 +168,97 @@ export const content = {
                 [
                     {
                         id: 1,
-                        src: "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+                        src:img1,
+                        // src: "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
                         alt: "image 1"
                     },
                     {
-                        id: 2,
-                        src: "https://images.unsplash.com/photo-1432462770865-65b70566d673?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
-                        alt: "image 2"
+                        id: 4,
+                        src:img4,
+                        // src: "https://images.unsplash.com/photo-1432462770865-65b70566d673?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+                        alt: "image 4"
                     },
                     {
-                        id: 3,
-                        src: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80",
-                        alt: "image 3"
+                        id: 7,
+                        src:img7,
+                        // src: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80",
+                        alt: "image 7"
+                    },
+                    {
+                        id: 10,
+                        src:img10,
+                        // src: "https://images.unsplash.com/photo-1432462770865-65b70566d673?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+                        alt: "image 10"
+                    },
+                    {
+                        id: 13,
+                        src:img13,
+                        // src: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80",
+                        alt: "image 13"
                     }
                 ],
             set2: [
                 {
-                    id: 4,
-                    src: "https://images.unsplash.com/photo-1432462770865-65b70566d673?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
-                    alt: "image 4"
+                    id: 2,
+                    src:img2,
+                    // src: "https://images.unsplash.com/photo-1432462770865-65b70566d673?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+                    alt: "image 2"
                 },
                 {
                     id: 5,
-                    src: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80",
+                    src:img5,
+                    // src: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80",
                     alt: "image 5"
                 },
                 {
-                    id: 6,
-                    src: "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-                    alt: "image 6"
-                }
-            ],
-            set3: [
-                {
-                    id: 7,
-                    src: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80",
-                    alt: "image 7"
-                },
-                {
                     id: 8,
-                    src: "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+                    src:img8,
+                    // src: "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
                     alt: "image 8"
                 },
                 {
+                    id: 11,
+                    src:img11,
+                    // src: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80",
+                    alt: "image 11"
+                },
+                {
+                    id: 14,
+                    src:img14,
+                    // src: "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+                    alt: "image 14"
+                },
+            ],
+            set3: [
+                {
+                    id: 3,
+                    src:img3,
+                    // src: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80",
+                    alt: "image 3"
+                },
+                {
+                    id: 6,
+                    src:img6,
+                    // src: "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+                    alt: "image 6"
+                },
+                {
                     id: 9,
-                    src: "https://images.unsplash.com/photo-1432462770865-65b70566d673?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+                    src:img9,
+                    // src: "https://images.unsplash.com/photo-1432462770865-65b70566d673?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
                     alt: "image 9"
+                },
+                {
+                    id: 12,
+                    src:img12,
+                    // src: "https://images.unsplash.com/photo-1432462770865-65b70566d673?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+                    alt: "image 9"
+                },
+                {
+                    id: 15,
+                    src:img15,
+                    // src: "https://images.unsplash.com/photo-1432462770865-65b70566d673?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+                    alt: "image 15"
                 }
             ]
         }
@@ -231,7 +283,7 @@ export const content = {
                         </svg>
                     ,
                     contact: "boharkaratetrainingschool@gmail.com",
-                    link: 'https://mailto/boharkaratetrainingschool@gmail.com'
+                    link: 'mailto:boharkaratetrainingschool@gmail.com'
 
                 },
                 {

@@ -1,6 +1,7 @@
 import React, { Fragment, createElement } from 'react'
 import { IoIosArrowRoundUp } from "react-icons/io";
 import { content } from '../../Utils/Content'
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
 
@@ -9,22 +10,30 @@ const Footer = () => {
     return (
 
         <footer className='sticky bg-Nav backdrop-blur-md ' style={{ boxShadow: '0 -8px 15px -3px #e0e0e0' }}  >
-            
+
             <section className="text-gray-800  px-4 py-5 max-w-screen-xl mx-auto md:px-8" >
-                
+
                 <div className=' max-w-xl md:max-w-full flex flex-col lg:flex-row justify-between  gap-5'>
+
+
                     {contactMethods.map((methods, i) => (
+
                         <Fragment key={i}>
-                            <ul className="mt-6 flex flex-col flex-wrap gap-x-10 gap-y-6 items-start">
-                                {methods.contact.map((item, i) => (
-                                    <li key={i} className="flex items-center gap-x-3">
-                                        <div className="flex-none text-gray-400">
-                                            {item.icon}
-                                        </div>
-                                        <p className='text-xs md:text-sm'>{item.contact}</p>
+
+                            <ul className="mt-6 flex flex-col flex-wrap gap-x-10 gap-y-4 items-start">
+                                <h3 className=" font-bold text-sm uppercase tracking-wide">Stay connected</h3>
+                                {methods.contact.slice(1).map((item, i) => (
+                                    <li key={i} >
+                                        <a href={item.link} target='_blank' className='flex items-center gap-x-3'>
+                                            <div className="flex-none text-gray-400">
+                                                {item.icon}
+                                            </div>
+                                            <p className='text-xs md:text-sm'>{item.contact}</p>
+                                        </a>
                                     </li>
                                 ))}
                             </ul>
+
                             <div>
                                 <table className="mt-6 table-auto text-sm text-left">
                                     <thead className="text-gray-600 font-medium border-b">
@@ -50,13 +59,15 @@ const Footer = () => {
                                     </tbody>
                                 </table>
                             </div>
+
                         </Fragment>
                     ))}
+
                 </div>
 
                 <div className="mt-8 items-center justify-between sm:flex">
                     <div className="mt-4 sm:mt-0 text-sm">
-                        &copy; 2024 INFYREC All rights reserved.
+                        &copy; 2024 Bohar Karate Training School. All rights reserved.
                     </div>
                     <div className="mt-6 sm:mt-0">
                         <ul className="flex items-center space-x-4">

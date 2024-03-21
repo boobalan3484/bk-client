@@ -1,16 +1,18 @@
 import React from 'react'
-import { IoIosArrowRoundUp } from "react-icons/io";
-import Karate from '../../../../Assets/programs/Karate.jpg'
+// import { IoIosArrowRoundUp } from "react-icons/io";
+// import Karate from '../../../../Assets/programs/Karate.jpg'
 
 // import video1 from '../../Assets/videos/Video1.mp4'
 // import video2 from '../../Assets/videos/Video2.mp4'
 // import video3 from '../../Assets/videos/Video3.mp4'
+// import video4 from '../../../../Assets/videos/video4.mp4'
+// import video5 from '../../../../Assets/videos/video5.mp4'
 
 const Videos = () => {
     return (
         <div className="mt-16 grid items-center gap-y-8 gap-x-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
 
-            <div className='flex flex-row sm:flex-col md:flex-col lg:flex-row gap-2 md:gap-6 items-center justify-center'
+            {/* <div className='flex flex-row sm:flex-col md:flex-col lg:flex-row gap-2 md:gap-6 items-center justify-center'
                 data-aos="fade-up"
             >
                 <img src={Karate} alt='' className='h-20 md:h-28 lg:h-36 rounded-full border-2 border-blue-gray-900 md:flex' />
@@ -30,25 +32,25 @@ const Videos = () => {
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
-            <iframe className="mx-auto w-full lg:max-w-xl h-56 rounded-lg sm:h-64 shadow-xl" src="https://www.youtube.com/embed/KaLxCiilHns" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen
+            {/* <iframe className="mx-auto w-full lg:max-w-xl h-56 rounded-lg sm:h-64 shadow-xl" src="https://www.youtube.com/embed/KaLxCiilHns" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen
                 data-aos="fade-up" data-aos-delay='700'
             >
-            </iframe>
+            </iframe> */}
 
 
             {/* <iframe className="mx-auto w-full lg:max-w-xl h-56 rounded-lg sm:h-64 shadow-xl" src="https://www.youtube.com/embed/KaLxCiilHns" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe> */}
 
 
-            {/* <iframe className="mx-auto w-full lg:max-w-xl h-56 rounded-lg sm:h-64 shadow-xl" src={video3} title="video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen
-                    data-aos="fade-up"
-                >
-                </iframe>
-                <iframe className="mx-auto w-full lg:max-w-xl h-56 rounded-lg sm:h-64 shadow-xl" src={video2} title="video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen
-                    data-aos="fade-up"
-                >
-                </iframe> */}
+            <iframe className="mx-auto w-full lg:max-w-xl h-56 rounded-lg sm:h-64 shadow-xl" src='https://drive.google.com/file/d/14ldz9ZqUlX18ZZ62uoQjLPLaThVpq5cm/preview' title="video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen
+                data-aos="fade-up"
+            >
+            </iframe>
+            <iframe className="mx-auto w-full lg:max-w-xl h-56 rounded-lg sm:h-64 shadow-xl" src="https://drive.google.com/file/d/16Wi9VVzIj20f5VmUmqsqxeLMjOe9vJvP/preview" title="video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen
+                data-aos="fade-up" data-aos-delay='700'
+            >
+            </iframe>
 
         </div>
     )

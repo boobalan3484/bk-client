@@ -27,33 +27,34 @@ const Gallery = () => {
             <div className="mt-8  grid gap-y-8 gap-x-12 sm:grid-cols-2 lg:grid-cols-3" >
                 {images.map((image, i) => (
                     <Fragment key={i} >
-                        <Carousel loop={true} autoplay={true} className="rounded-xl " navigation={navi} nextArrow={navi} prevArrow={navi} data-aos="zoom-in" data-aos-delay='350'>
+                        <Carousel loop={true} autoplay={true} className="group/img1 cursor-crosshair rounded-xl shadow-lg shadow-gray-400" navigation={navi} nextArrow={navi} prevArrow={navi} data-aos="zoom-in" data-aos-delay='350'>
                             {image.set1.map((item) => (
                                 <img
                                     key={item.id}
                                     src={item.src}
                                     alt={item.alt}
-                                    className="h-56 sm:h-64 w-full object-cover object-center"
+                                    className="h-56 sm:h-64 w-full object-cover brightness-95 duration-150 group-hover/img1:brightness-100"
                                 />
                             ))}
                         </Carousel>
-                        <Carousel loop={true} autoplay={true} className="rounded-xl " navigation={navi} nextArrow={navi} prevArrow={navi} data-aos="zoom-in" data-aos-delay='750'>
+                        <Carousel loop={true} autoplay={true} className="group/img2 cursor-crosshair rounded-xl shadow-lg shadow-gray-400" navigation={navi} nextArrow={navi} prevArrow={navi} data-aos="zoom-in" data-aos-delay='350'>
                             {image.set2.map((item) => (
                                 <img
                                     key={item.id}
                                     src={item.src}
                                     alt={item.alt}
-                                    className="h-56 sm:h-64 w-full object-cover object-center"
+                                    
+                                    className="h-56 sm:h-64 w-full object-cover brightness-95 duration-150 group-hover/img2:brightness-100"
                                 />
                             ))}
                         </Carousel>
-                        <Carousel loop={true} autoplay={true} className="rounded-xl " navigation={navi} nextArrow={navi} prevArrow={navi} data-aos="zoom-in" data-aos-delay='1000'>
+                        <Carousel loop={true} autoplay={true} className="group/img3 cursor-crosshair rounded-xl shadow-lg shadow-gray-400" navigation={navi} nextArrow={navi} prevArrow={navi} data-aos="zoom-in" data-aos-delay='350'>
                             {image.set3.map((item) => (
                                 <img
                                     key={item.id}
                                     src={item.src}
                                     alt={item.alt}
-                                    className="h-56 sm:h-64 w-full object-cover object-center"
+                                    className="h-56 sm:h-64 w-full object-cover brightness-95 duration-150 group-hover/img3:brightness-100"
                                 />
                             ))}
                         </Carousel>

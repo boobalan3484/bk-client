@@ -14,9 +14,9 @@ const Hero = () => {
         <div className="space-y-4 flex-1 sm:text-center lg:text-left"
 
         >
-          <h1 className="text-gray-800 font-extrabold text-4xl xl:text-5xl" data-aos="fade-down" data-aos-delay="100">
+          <h1 className="text-indigo-600 font-extrabold text-4xl xl:text-5xl font-revue-bold tracking-wide" data-aos="fade-down" data-aos-delay="100">
             BOHAR KARATE
-            <span className="text-indigo-600" data-aos="fade-down" data-aos-delay="400"> TRAINING SCHOOL</span>
+            <span className="text-gray-800" data-aos="fade-down" data-aos-delay="400"> TRAINING SCHOOL</span>
           </h1>
           {/* <p className="text-gray-600 text-3xl font-bold max-w-xl leading-relaxed sm:mx-auto lg:ml-0">
             MARTIAL ARTS
