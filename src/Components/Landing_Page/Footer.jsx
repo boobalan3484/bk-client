@@ -1,7 +1,6 @@
 import React, { Fragment, createElement } from 'react'
 import { IoIosArrowRoundUp } from "react-icons/io";
 import { content } from '../../Utils/Content'
-import { Link } from 'react-router-dom';
 
 const Footer = () => {
 
@@ -24,11 +23,11 @@ const Footer = () => {
                                 <h3 className=" font-bold text-sm uppercase tracking-wide">Stay connected</h3>
                                 {methods.contact.slice(1).map((item, i) => (
                                     <li key={i} >
-                                        <a href={item.link} target='_blank' className='flex items-center gap-x-3'>
+                                        <a href={item.link} target='_blank' rel='noreferrer noopener' className='flex items-center gap-x-3'>
                                             <div className="flex-none text-gray-400">
                                                 {item.icon}
                                             </div>
-                                            <p className='text-xs md:text-sm'>{item.contact}</p>
+                                            <p className='text-xs md:text-sm tracking-wide'>{item.contact}</p>
                                         </a>
                                     </li>
                                 ))}

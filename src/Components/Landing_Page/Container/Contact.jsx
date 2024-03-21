@@ -45,7 +45,7 @@ const Contact = () => {
                         </p> */}
 
                         <div className="py-5 px-1  text-start  ">
-                            <Link to='contact' className="text-indigo-600 hover:text-indigo-500 text-sm font-semibold ">
+                            <Link to='contact' className="group/a text-indigo-600 hover:text-indigo-500 text-sm font-semibold ">
                                 Reach out
                                 <span className='inline-block'>
                                     <IoIosArrowRoundUp className=' rotate-45 text-lg transform translate-x-0 translate-y-[5px] group-hover/a:translate-y-[2px] group-hover/a:translate-x-[3px] transition-all duration-150' />
@@ -55,7 +55,7 @@ const Contact = () => {
                     </div>
 
                     <div data-aos="fade-up" className='flex-1 mt-12' data-aos-delay="600">
-                        <iframe title='map' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7440.834390326187!2d78.07128195572346!3d11.378158515632478!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babdd0071f4d21b%3A0x22207226fdc8f9b!2sGovernment%20Hospital%20%F0%9F%8F%A5%20Periyamanali!5e0!3m2!1sen!2sin!4v1710582024274!5m2!1sen!2sin" className=' w-full h-full border-0' allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe title='map' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7440.834390326187!2d78.07128195572346!3d11.378158515632478!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babdd0071f4d21b%3A0x22207226fdc8f9b!2sGovernment%20Hospital%20%F0%9F%8F%A5%20Periyamanali!5e0!3m2!1sen!2sin!4v1710582024274!5m2!1sen!2sin" className=' w-full h-60 lg:h-full border-0' allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                     </div>
 
                 </div>
