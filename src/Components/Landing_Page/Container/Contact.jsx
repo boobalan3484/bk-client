@@ -22,7 +22,7 @@ const Contact = () => {
                             Let us know how we can help
                         </p>
                         <p>
-                            We’re here to help and answer any question you might have or need additional information regarding <b> Bohar Karate Training School </b>, We look forward to hearing from you!
+                            We’re here to help and answer any question you might have or need additional information regarding <b> Bohar Karate Training School.</b> <br /> We look forward to hearing from you!
                         </p>
                         {contactMethods.map((methods, i) => (
                             <Fragment key={i}>
