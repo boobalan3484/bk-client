@@ -71,9 +71,9 @@ const Footer = () => {
                     <div className="mt-6 sm:mt-0">
                         <ul className="flex items-center space-x-4">
                             {socialMedia.map((item, i) => (
-                                <li key={i} className="w-10 h-10 rounded-full flex items-center justify-center shadow-md hover:shadow-blue-gray-800 hover:transition-all hover:duration-100 ">
+                                <li key={i} className="w-10 h-10 rounded-full flex items-center drop-shadow justify-center shadow-md hover:shadow-blue-gray-800 hover:transition-all hover:duration-100 ">
                                     <a href={item.link} className=''>
-                                        {createElement(item.icon, { className: `w-6 h-6 ${item.color}` })}
+                                        {createElement(item.icon, { className: `w-6 h-6 drop-shadow ${item.color}` })}
                                     </a>
                                 </li>
                             ))}

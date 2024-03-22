@@ -3,14 +3,16 @@ import Nunchack from '../Assets/programs/Nunchack.png'
 import Karate from '../Assets/programs/Karate.jpg'
 import Silambam from '../Assets/programs/Silambam.jpg'
 import Varmam from '../Assets/programs/Varmam.png'
-import YogaHeader from "../Assets/programs/Yoga/yogaheader.jpg";
+import YogaHeader from "../Assets/programs/yogaheader.jpg";
 import Karate_Right from "../Assets/programs/karate_png.png";
 import silambam_Right from "../Assets/programs/silambam_png.png";
 import Karate_Cover from "../Assets/programs/karate_cover.png";
 import Silambam_Cover from "../Assets/programs/silambam_cover.png";
 import nanchaku_Cover from "../Assets/programs/nunchaku_cover.png";
 import nanchaku_Right from "../Assets/programs/nunchaku.png";
-import YogaSection from "../Assets/programs/Yoga/yoga1.jpg";
+import YogaSection from "../Assets/programs/yoga1.jpg";
+import varmamRight from '../Assets/programs/varmam-anime.jpeg'
+import varmamCover from '../Assets/programs/Varmam-cover.png'
 
 import img1 from '../Assets/Gallery/img1.jpg'
 import img2 from '../Assets/Gallery/img2.jpg'
@@ -35,8 +37,8 @@ export const content = {
     nav: [
         { title: "programs", path: "programs" },
         { title: "about", path: "about" },
-        { title: "gallery", path: "media" },
         { title: "tournament", path: "tournament" },
+        { title: "gallery", path: "media" },
         { title: "team", path: "team" },
         { title: "contact", path: "contact" }
     ],
@@ -51,9 +53,9 @@ export const content = {
             img1: Karate_Cover,
             img2: Karate_Right,
             img3: YogaSection,
-            para1: "The 19th century witnessed cultural exchange between Okinawa and China, with martial artists traveling to China to study martial arts and bringing back new techniques and insights. This exchange deepened the integration of Chinese martial arts principles into Okinawan martial arts, contributing to the evolution of karate.",
+            para3: "The 19th century witnessed cultural exchange between Okinawa and China, with martial artists traveling to China to study martial arts and bringing back new techniques and insights. This exchange deepened the integration of Chinese martial arts principles into Okinawan martial arts, contributing to the evolution of karate.",
             para2: "Karate's journey to mainland Japan began in the early 20th century when Funakoshi Gichin, a prominent Okinawan karate master, introduced the art to Japan. As karate gained popularity, different styles and organizations emerged, each with its unique approach and emphasis. Styles such as Wado-ryu, Goju-ryu, and Shito-ryu proliferated, each with its distinctive techniques, kata , and training methods.",
-            para3: "Today, karate is practiced by millions of people worldwide, encompassing a diverse community of practitioners ranging from children to seniors.Despite these stylistic variations, the core principles of karate remained consistent: discipline, respect,humility, and the pursuit of self-improvement. Karate has also evolved into a competitive sport, with international tournaments such as the World Karate Championships showcasing the skills of top athletes.",
+            para1: "Today, karate is practiced by millions of people worldwide, encompassing a diverse community of practitioners ranging from children to seniors.Despite these stylistic variations, the core principles of karate remained consistent: discipline, respect,humility, and the pursuit of self-improvement. Karate has also evolved into a competitive sport, with international tournaments such as the World Karate Championships showcasing the skills of top athletes.",
             para4: "Whether you're a beginner looking to start your martial arts journey to deepen your skills, karate offers a rewarding path of self-discovery and personal growth. Join us as we explore the history, techniques, and philosophy of karate, and discover the power and beauty of this timeless martial art. Embark on this journey with us and unlock the secrets of karate as we strive for excellence in body, mind, and spirit.",
         },
         {
@@ -65,10 +67,10 @@ export const content = {
             img1: nanchaku_Cover,
             img2: nanchaku_Right,
             img3: YogaSection,
-            para1: "Nunchaku, also known as nunchucks or chainsticks, originated in Okinawa, Japan, where it was originally used as a farm tool for threshing rice. Over time, Okinawan martial artists adapted the nunchaku into a weapon for self-defense and combat, incorporating it into their training regimens and martial arts systems.",
+            para4: "Nunchaku, also known as nunchucks or chainsticks, originated in Okinawa, Japan, where it was originally used as a farm tool for threshing rice. Over time, Okinawan martial artists adapted the nunchaku into a weapon for self-defense and combat, incorporating it into their training regimens and martial arts systems.",
             para2: "The nunchaku consists of two wooden or metal sticks connected by a chain or cord. The sticks, typically made of hardwood such as oak or hickory, are cylindrical in shape and measure around 12 to 14 inches in length. The chain or cord, usually made of metal or nylon, allows for fluid and rapid movements, making the nunchaku a formidable weapon in the hands of a skilled practitioner",
             para3: " One of the key strengths of the nunchaku is its versatility and adaptability. While it is primarily used as a striking weapon, the nunchaku can also be employed for blocking, trapping, and grappling techniques. Its compact size and lightweight construction make it easy to carry and conceal, making it a practical option for self-defense in a variety of situations.",
-            para4: "Whether you're a beginner looking to expand your skills, the nunchaku offers a thrilling and rewarding journey. Join us as we explore the history, techniques, and applications of this iconic martial arts weapon, and discover the power and beauty of the nunchaku. Embark on this journey with us and unlock the potential of the nunchaku in your martial arts practice.",
+            para1: "Whether you're a beginner looking to expand your skills, the nunchaku offers a thrilling and rewarding journey. Join us as we explore the history, techniques, and applications of this iconic martial arts weapon, and discover the power and beauty of the nunchaku. Embark on this journey with us and unlock the potential of the nunchaku in your martial arts practice.",
         },
         {
             id: 3,
@@ -79,9 +81,9 @@ export const content = {
             img1: Silambam_Cover,
             img2: silambam_Right,
             img3: YogaSection,
-            para1: "Silambam is a traditional Indian martial art originating from Tamil Nadu.The history of Silambam can be traced back thousands of years, with references to staff fighting techniques found in ancient Tamil literature, such as the Sangam literature and the epic poem Silappatikaram. Over time, Silambam evolved from a form of combat training for warriors into a revered art form and a means of physical fitness, mental discipline, and cultural expression",
+            para3: "Silambam is a traditional Indian martial art originating from Tamil Nadu.The history of Silambam can be traced back thousands of years, with references to staff fighting techniques found in ancient Tamil literature, such as the Sangam literature and the epic poem Silappatikaram. Over time, Silambam evolved from a form of combat training for warriors into a revered art form and a means of physical fitness, mental discipline, and cultural expression",
             para2: "The Silambam is typically made of bamboo or rattan. Practitioners wield the staff with precision and agility, employing a variety of strikes, blocks, thrusts, and spins.It emphasizes not only physical prowess but also mental focus, discipline, and spiritual development. Practitioners undergo rigorous training to master the techniques of Silambam, honing their reflexes, coordination, and timing.Silambam is not just a martial art but also a cultural tradition deeply intertwined with Tamil identity and heritage.",
-            para3: " It is often performed during festivals, celebrations, and cultural events, serving as a symbol of Tamil pride and resilience. In recent years, Silambam has gained recognition beyond its traditional homeland, with practitioners and enthusiasts promoting its practice and preservation worldwide. Schools and academies dedicated to Silambam have been established in various countries, fostering cross-cultural exchange and appreciation for this ancient martial art.",
+            para1: " Silambam is performed during festivals, celebrations, and cultural events, serving as a symbol of Tamil pride and resilience. In recent years, Silambam has gained recognition beyond its traditional homeland, with practitioners and enthusiasts promoting its practice and preservation worldwide. Schools and academies dedicated to Silambam have been established in various countries, fostering cross-cultural exchange and appreciation for this ancient martial art.",
             para4: " Whether you're a beginner looking to explore new disciplines, Silambam offers a unique and rewarding journey. Join us as we delve into the history, techniques, and philosophy of Silambam, and discover the power and beauty of this ancient martial art. Embark on this journey with us and unlock the secrets of Silambam as we explore its timeless wisdom and enduring legacy.",
         },
         {
@@ -93,9 +95,9 @@ export const content = {
             img1: YogaHeader,
             img2: YogaSection,
             img3: YogaSection,
-            para1: "Yoga is an ancient practice originating from India, has transcended centuries to become a globally recognized tool for physical, mental, and spiritual well-being.It is more than just physical postures or asanas. it's a comprehensive system encompassing breath control, meditation, ethical guidelines, and philosophical insights. The word 'yoga' itself means union, signifying the integration of body, mind, and spirit.",
+            para3: "Yoga is an ancient practice originating from India, has transcended centuries to become a globally recognized tool for physical, mental, and spiritual well-being.It is more than just physical postures or asanas. it's a comprehensive system encompassing breath control, meditation, ethical guidelines, and philosophical insights. The word 'yoga' itself means union, signifying the integration of body, mind, and spirit.",
             para2: " Pranayama, or breath control, is a fundamental aspect of yoga practice that is particularly relevant for martial artists. By learning to regulate and deepen the breath, practitioners can enhance their endurance, stamina, and energy levels, optimizing their performance during training and competition",
-            para3: "It offers a pathway to self-discovery and self-realization. Through meditation and introspection, practitioners delve into the depths of their consciousness, uncovering their true nature beyond the fluctuations of the ego. Yoga philosophy teaches that we are all interconnected and part of a larger cosmic whole, fostering a sense of unity, compassion, and reverence for all life",
+            para1: "Yoga & Meditation offers a pathway to self-discovery and self-realization. Through meditation and introspection, practitioners delve into the depths of their consciousness, uncovering their true nature beyond the fluctuations of the ego. Yoga philosophy teaches that we are all interconnected and part of a larger cosmic whole, fostering a sense of unity, compassion, and reverence for all life",
             para4: "Whether you're looking to enhance your training or simply curious about the benefits of yoga, we invite you to join us on this journey of self-discovery and transformation. Explore the ancient wisdom and modern applications of yoga, and discover how it can enrich your martial arts practice and your life. Embark on this journey with us and unlock the full potential of body, mind, and spirit through the practice of yoga",
         },
         {
@@ -104,13 +106,13 @@ export const content = {
             description: "Explore the intricate art of Varmam, an ancient Indian practice blending pressure points, energy flow, and combat techniques. Our experienced instructors guide you through this profound discipline, fostering wellness, self-defense skills, and spiritual growth. Join us today.",
             image: Varmam,
             url: 'varmam',
-            img1: YogaHeader,
-            img2: YogaSection,
+            img1: varmamCover,
+            img2: varmamRight,
             img3: YogaSection,
-            para1: "Varmam is an ancient healing and martial art system originating from Tamil Nadu. combines elements of acupressure, traditional medicine, and martial techniques.Varmam points are believed to be located throughout the human body and correspond to specific organs, systems, and functions. By stimulating or manipulating these points through pressure, massage, or herbal remedies, Varmam practitioners aim to restore balance to the body's energy flow, alleviate pain, and promote healing. ",
+            para4: "Varmam is an ancient healing and martial art system originating from Tamil Nadu. combines elements of acupressure, traditional medicine, and martial techniques.Varmam points are believed to be located throughout the human body and correspond to specific organs, systems, and functions. By stimulating or manipulating these points through pressure, massage, or herbal remedies, Varmam practitioners aim to restore balance to the body's energy flow, alleviate pain, and promote healing. ",
             para2: "It is used to treat a wide range of ailments and injuries, from muscular strains and joint pain to more serious conditions.Varmam is also employed as a martial art, with practitioners utilizing their knowledge of varmam points for offensive and defensive purposes. Techniques targeting vulnerable varmam points can incapacitate opponents or cause various physiological effects.",
             para3: "Despite its ancient origins and deep cultural significance, Varmam remains relatively obscure outside of Tamil Nadu, with limited documentation and formalized training programs. However, efforts are underway to preserve and promote this ancient art form, with dedicated practitioners and scholars working to research, document, and transmit Varmam teachings to future generations.",
-            para4: "Varmam offers a unique and transformative journey of self-discovery and personal growth. Join us as we explore the history, techniques, and philosophy of Varmam, and discover the power and wisdom of this ancient martial art and healing tradition. Embark on this journey with us and unlock the secrets of Varmam as we strive for balance, harmony, and mastery in body, mind, and spirit.",
+            para1: "Varmam offers a unique and transformative journey of self-discovery and personal growth. Join us as we explore the history, techniques, and philosophy of Varmam, and discover the power and wisdom of this ancient martial art and healing tradition. Embark on this journey with us and unlock the secrets of Varmam as we strive for balance, harmony, and mastery in body, mind, and spirit.",
         },
     ],
 
@@ -260,7 +262,7 @@ export const content = {
                             <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
                         </svg>
                     ,
-                    contact: "Government Hospital  Periyamanali"
+                    contact: "Govt. Primary Health Center, Periyamanali"
                 },
                 {
                     icon:
@@ -328,7 +330,7 @@ export const content = {
             name: 'Twitter.',
             icon: FaXTwitter,
             link: 'https://twitter.com/',
-            color: 'text-black-400',
+            color: 'text-black-400 drop-shadow',
         },
     ]
 

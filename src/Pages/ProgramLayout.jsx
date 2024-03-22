@@ -62,7 +62,7 @@ const ProgramLayout = () => {
 					<p className="lg:text-xl w-full lg:w-4/5 text-justify md:text-base "
 						data-aos='fade-up' data-aos-delay='1400'
 					>
-						{program.para2}
+						{program.para1}
 					</p>
 					<div className=" h-36 lg:h-52">
 						<img

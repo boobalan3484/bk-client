@@ -1,5 +1,5 @@
 import React from 'react'
-import { IoIosArrowRoundForward, IoIosArrowRoundUp } from 'react-icons/io';
+import { IoIosArrowRoundForward } from 'react-icons/io';
 import { IoRibbonSharp } from "react-icons/io5";
 import { Link } from 'react-router-dom'
 
@@ -9,26 +9,26 @@ const Tournament = () => {
         {
             title: "Shotakan Karate",
             desc: "Currently, ManTech is seeking a motivated, career and customer-oriented Software Developer to join our team in Fort Meade, MD.",
-            date: "May 17, 2022",
+            date: "May 17, 2024",
             guest: 'Mr.Qwertyu, Director of XYZ Federation',
-            location: "Columbia, MD",
+            location: "Periyamanali",
             impression: "Registration Open",
 
         },
         {
             title: "Silambam ",
             desc: " Help us solve problems and develop great user interface tools for our developers.",
-            date: "Nov 11, 2022",
+            date: "Jan 11, 2024",
             guest: 'Mr.Asdfghj, Director of ABC Federation',
-            location: "Remote",
+            location: "Iluppili",
             impression: "Registration Closed"
         },
         {
             title: "Nunchaku",
             desc: "This position is 100% remote, working as part of a small, multi-functional team. You must be confident at working alone.",
-            date: "Jan 2, 2022",
+            date: "Apr 2, 2024",
             guest: 'Mr.Zxcvbnm, Director of MNO Federation',
-            location: "Remote",
+            location: "Mallur",
             impression: "Registration Open"
         },
     ]
@@ -56,14 +56,15 @@ const Tournament = () => {
                 </div>
 
                 <div className="mt-8" >
-                    <ul className="space-y-4">
+                    <ul className="space-y-1">
                         {
                             jobs.map((item, i) => (
-                                <li key={i} className="py-4 bg-white rounded-md "
+                                <li key={i} className="py-2 bg-white rounded-md "
                                     data-aos="zoom-in"
                                     data-aos-delay={i * 400}>
                                     <div>
-                                        <div className="justify-between sm:flex">
+                                        <div className="justify-between md:flex">
+
                                             <div className="flex-1">
                                                 <h3 className="text-xl font-semibold text-indigo-600">
                                                     {item.title}
@@ -71,7 +72,24 @@ const Tournament = () => {
                                                 <p className="text-gray-500 mt-2 pr-2 max-w-3xl">
                                                     {item.desc}
                                                 </p>
+
+                                                <div className=" my-4 items-center space-y-4 text-sm sm:flex sm:space-x-4 sm:space-y-0">
+
+                                                    <span className="flex items-center gap-3 bg-light-blue-100/30  py-2 px-4 rounded-md">
+                                                        <span className='flex items-center gap-2'>
+                                                            <IoRibbonSharp />
+                                                            Chief Guest
+                                                        </span>
+                                                        -
+                                                        <span className='text-blue-800 font-bold'>
+                                                            {item.guest}
+                                                        </span>
+
+                                                    </span>
+                                                </div>
+
                                             </div>
+
                                             <div className="mt-5 space-y-4 text-sm sm:mt-0 sm:space-y-3">
                                                 <span className="flex items-center text-gray-500">
                                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
@@ -91,7 +109,7 @@ const Tournament = () => {
                                                         <Link to={`/${'contact'}`} key={i} className='group/a'>
                                                             <span className={`w-36 py-2 flex justify-center items-center gap-1 rounded-full font-semibold text-xs ${labelColors[item.impression]?.color || ""}`}>
                                                                 {item.impression}
-                                                                <IoIosArrowRoundForward className='absolute -translate-x-14 pt-[1px] group-hover/a:translate-x-14 duration-1000'/>
+                                                                <IoIosArrowRoundForward className={`text-lg absolute -translate-x-14 pt-[1px] text-transparent group-hover/a:text-green-600 group-hover/a:translate-x-14 duration-500`} />
                                                             </span>
                                                         </Link>
                                                     ) : (
@@ -107,18 +125,6 @@ const Tournament = () => {
                                         <div className=" items-center space-y-4 text-sm md:flex md:space-x-4 md:space-y-0">
 
 
-
-                                            <span className="flex items-center gap-3 bg-light-blue-100/30  py-2 px-4 rounded-md">
-                                                <span className='flex items-center gap-2'>
-                                                    <IoRibbonSharp />
-                                                    Chief Guest
-                                                </span>
-                                                -
-                                                <span className='text-blue-800 font-bold'>
-                                                    {item.guest}
-                                                </span>
-
-                                            </span>
                                         </div>
                                     </div>
                                 </li>

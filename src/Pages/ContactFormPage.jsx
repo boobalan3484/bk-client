@@ -55,6 +55,7 @@ const ContactFormPage = () => {
           ...prevData,
           subject: e.target.value
         }));
+        break;
       case "message":
         setData((prevData) => ({
           ...prevData,
@@ -76,8 +77,9 @@ const ContactFormPage = () => {
       PhoneNumber: data.phoneNumber,
       District: data.district,
       Email: data.email,
-      Subject:data.subject,
-      Message: data.message
+      Message: data.message,
+      Subject: data.subject,
+
     }
     console.log(paylode);
 
@@ -92,7 +94,7 @@ const ContactFormPage = () => {
           phoneNumber: "",
           age: "",
           district: "",
-          subject:"",
+          subject: "",
           message: ""
         });
       })
@@ -128,7 +130,7 @@ const ContactFormPage = () => {
                 type="text"
                 required
                 placeholder='Example: John Doe'
-                pattern=''
+                // pattern=''
                 className="w-full mt-1 px-3 py-1 text-gray-700 bg-transparent outline-none border border-blue-gray-200 focus:border-indigo-600 shadow-sm rounded-md"
                 id='name'
                 name='name'
@@ -160,7 +162,7 @@ const ContactFormPage = () => {
               <input
                 type="text"
                 required
-                pattern=''
+                // pattern=''
                 placeholder='Example: +91 98******00'
                 className="w-full mt-1 px-3 py-1 text-gray-700 bg-transparent outline-none border border-blue-gray-200 focus:border-indigo-600 shadow-sm rounded-md"
                 id='phoneNumber'

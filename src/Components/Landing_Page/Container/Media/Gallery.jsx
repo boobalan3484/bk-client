@@ -21,7 +21,7 @@ const Gallery = () => {
                     Gallery
                 </h3>
                 <p className="mt-3">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius, enim ex faucibus purus.
+                The Spirit of Martial Arts Discover the energy and focus of our students as they embark on their journey, showcased in our gallery of dynamic training sessions.
                 </p>
             </div>
             <div className="mt-8  grid gap-y-8 gap-x-12 sm:grid-cols-2 lg:grid-cols-3" >
