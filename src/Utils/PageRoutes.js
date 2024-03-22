@@ -22,7 +22,7 @@ const PageRoutes = () => {
 
             </Route>
 
-            <Route path="about" element={<ProgramLayout />} />
+            <Route path="about" element={<AboutPage />} />
 
             <Route path="contact" element={<ContactFormPage />} />
 

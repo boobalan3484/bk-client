@@ -35,8 +35,9 @@ export const content = {
     nav: [
         { title: "programs", path: "programs" },
         { title: "about", path: "about" },
-        { title: "team", path: "team" },
         { title: "gallery", path: "media" },
+        { title: "tournament", path: "tournament" },
+        { title: "team", path: "team" },
         { title: "contact", path: "contact" }
     ],
 

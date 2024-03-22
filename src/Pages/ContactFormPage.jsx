@@ -10,6 +10,7 @@ const ContactFormPage = () => {
     phoneNumber: "",
     age: "",
     district: "",
+    subject: "",
     message: ""
   })
 
@@ -36,7 +37,8 @@ const ContactFormPage = () => {
           ...prevData,
           age: e.target.value
         }));
-        break; case "district":
+        break;
+      case "district":
         setData((prevData) => ({
           ...prevData,
           district: e.target.value
@@ -48,6 +50,11 @@ const ContactFormPage = () => {
           phoneNumber: e.target.value
         }));
         break;
+      case "subject":
+        setData((prevData) => ({
+          ...prevData,
+          subject: e.target.value
+        }));
       case "message":
         setData((prevData) => ({
           ...prevData,
@@ -69,6 +76,7 @@ const ContactFormPage = () => {
       PhoneNumber: data.phoneNumber,
       District: data.district,
       Email: data.email,
+      Subject:data.subject,
       Message: data.message
     }
     console.log(paylode);
@@ -84,6 +92,7 @@ const ContactFormPage = () => {
           phoneNumber: "",
           age: "",
           district: "",
+          subject:"",
           message: ""
         });
       })
@@ -95,9 +104,9 @@ const ContactFormPage = () => {
 
   return (
     <section id='contact' className="min-h-screen w-full grid place-content-center bg-blue-gray-100/10" >
-      
+
       <main className=" h-full backdrop-blur-md z-[999] rounded-lg sm:max-w-lg lg:max-w-md shadow-md shadow-blue-gray-500/75 bg-Nav">
-        
+
         <form
           onSubmit={handleSubmit}
           className=" divide-slate-600  rounded-lg"
@@ -143,7 +152,7 @@ const ContactFormPage = () => {
                 value={data.email}
               />
             </div>
-            
+
             <div>
               <label className="font-medium">
                 Mobile Number
@@ -176,7 +185,7 @@ const ContactFormPage = () => {
                 value={data.district}
               />
             </div>
-            
+
             <div>
               <label className="font-medium">
                 Age
@@ -192,7 +201,23 @@ const ContactFormPage = () => {
                 value={data.age}
               />
             </div>
-            
+
+            <div>
+              <label className="font-medium">
+                Subject
+              </label>
+              <input
+                type="text"
+                required
+                placeholder='Example: Enquire about...'
+                className="w-full mt-1 px-3 py-1 text-gray-700 bg-transparent outline-none border border-blue-gray-200 focus:border-indigo-600 shadow-sm rounded-md"
+                id='subject'
+                name='subject'
+                onChange={(e) => handleChange(e)}
+                value={data.subject}
+              />
+            </div>
+
             <div>
               <label className="font-medium">
                 Message
@@ -208,11 +233,11 @@ const ContactFormPage = () => {
               >
               </textarea>
             </div>
-            
+
             <button className="w-full px-4 py-2 text-white font-medium bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-600 rounded-md duration-150">
               Submit
             </button>
-          
+
           </div>
 
         </form>

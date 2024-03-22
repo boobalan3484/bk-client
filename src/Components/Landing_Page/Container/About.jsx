@@ -25,8 +25,6 @@ const About = () => {
                             Welcome to Bohar Karate Training School, your premier destination for authentic training in Shotokan Karate, Varmam, Silambam, Yoga, and Meditation, and Nunchaku.
                             <br />
                             Our experienced instructors provide expert guidance for all levels, from beginners to advanced practitioners.
-
-                            Additionally, we organize various competitions in each program and issue dojo certificates to participants.
                         </p>
                         <div className="py-5 px-1  text-start  ">
                             <Link to='about' className="text-indigo-600 hover:text-indigo-500 text-sm font-semibold ">
