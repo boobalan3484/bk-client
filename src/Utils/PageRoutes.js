@@ -7,28 +7,29 @@ import AboutPage from '../Pages/AboutPage'
 import ContactFormPage from '../Pages/ContactFormPage'
 import NotFoundPage from '../Pages/NotFoundPage'
 
+
 const PageRoutes = () => {
 
     return (
 
-        <Routes>
+            <Routes>
 
-            <Route index path="/" element={<LandingPage />} />
+                <Route index path="/" element={<LandingPage />} />
+                <Route path='programs' >
 
-            <Route path='programs' >
+                    <Route path=":url" element={<ProgramLayout />} />
+                    {/* <Route path=":id" element={<ProgramLayout />} /> */}
 
-                <Route path=":url" element={<ProgramLayout />} />
-                {/* <Route path=":id" element={<ProgramLayout />} /> */}
+                </Route>
 
-            </Route>
+                <Route path="about" element={<AboutPage />} />
 
-            <Route path="about" element={<AboutPage />} />
+                <Route path="contact" element={<ContactFormPage />} />
 
-            <Route path="contact" element={<ContactFormPage />} />
+                <Route path="*" element={<NotFoundPage />} />
 
-            <Route path="*" element={<NotFoundPage />} />
+            </Routes>
 
-        </Routes>
     )
 }
 

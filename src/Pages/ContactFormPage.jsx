@@ -179,7 +179,7 @@ const ContactFormPage = () => {
               <input
                 type="text"
                 required
-                placeholder='Example: Salem'
+                placeholder='Example: Enter Location'
                 className="w-full mt-1 px-3 py-1 text-gray-700 bg-transparent outline-none border border-blue-gray-200 focus:border-indigo-600 shadow-sm rounded-md"
                 id='district'
                 name='district'

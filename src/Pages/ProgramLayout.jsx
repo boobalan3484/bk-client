@@ -36,7 +36,6 @@ const ProgramLayout = () => {
 	return (
 		<section className="h-full">
 			<div className=" pt-10 pb-6 max-w-screen-xl w-full lg:w-4/5 mx-auto px-4 md:px-8 items-center lg:flex flex-col ">
-				{/* <div className="pt-5 pb-14 gap-x-12 "> */}
 
 				<img
 					className="h-[150px] lg:h-[200px] object-contain mx-auto"
@@ -53,32 +52,12 @@ const ProgramLayout = () => {
 				</h3>
 
 				<p className=" my-3 m-auto lg:text-xl font-semibold   text-center text-base"
-					data-aos='fade-down' 
+					data-aos='fade-down'
 				>
-					{program.description}
+					{program.line1}
 				</p>
 
-				<div className="m-auto my-4 lg:my-0 flex justify-between items-center flex-nowrap lg:flex-row flex-col md:gap-4 sm:gap-4 lg:gap-0 ">
-					<p className="lg:text-xl w-full lg:w-4/5 text-justify md:text-base "
-						data-aos='fade-up' 
-					>
-						{program.para1}
-					</p>
-					<div className=" h-36 lg:h-52">
-						<img
-							className="w-full h-full"
-							src={program.img2}
-							alt=" "
-							data-aos='zoom-in' 
-						/>
-					</div>
-				</div>
-
-				{/* <p className="w-4/5 my-3 m-auto lg:text-xl font-semibold  text-center text-base">
-						{program.para3}
-					</p> */}
-
-				<div className="my-8 px-1  text-center "
+				<div className="my-8 px-1 text-center"
 					data-aos='zoom-in'>
 					<Link to={`/${'contact'}`} className="group/a text-blue-gray-50 group-hover/a:text-white  bg-indigo-600 hover:bg-indigo-500 py-3 px-6 rounded-full duration-150 active:bg-indigo-300 tracking-wide font-medium">
 						Enquire Now
@@ -88,20 +67,39 @@ const ProgramLayout = () => {
 					</Link>
 				</div>
 
-					{/* <div className="m-auto flex justify-evenly items-center flex-nowrap lg:flex-row flex-col md:gap-4 sm:gap-4 lg:gap-0 ">
-							<div className="lg:w-[15%] h-[150px] lg:h-[200px] md:w-[20%] sm:w-[20%]">
-								<img
-									className="w-full h-full"
-									src={program.img3}
-									alt=" "
-								/>
-							</div>
-							<p className="lg:text-xl my-3 w-4/5 text-justify text-base ">
-								{program.para4}
+				<div className="m-auto my-4 lg:my-0 flex justify-between items-center flex-nowrap lg:flex-row flex-col md:gap-4 sm:gap-4 lg:gap-2 ">
+					<div className="w-full lg:w-4/5 flex flex-col gap-5">
+						<div data-aos='fade-up' data-aos-delay='300'>
+							<p className="lg:text-xl font-bold text-justify md:text-base ">
+								{program.line2Head}
 							</p>
-						</div> */}
+							<p className="lg:text-base  text-justify md:text-base ">
+								{program.line2}
+							</p>
+						</div>
+						<div data-aos='fade-down' data-aos-delay='800'>
+							<p className="lg:text-xl font-bold text-justify md:text-base ">
+								{program.line3Head}
+							</p>
+							<p className="lg:text-base  text-justify md:text-base ">
+								{program.line3}
+							</p>
+						</div>
+					</div>
 
-				{/* </div> */}
+					<div className=" h-36 lg:h-52">
+						<img
+							className="w-full h-full"
+							src={program.img2}
+							alt=" "
+							data-aos='zoom-in'
+						/>
+					</div>
+
+
+				</div>
+
+
 			</div>
 		</section>
 	);

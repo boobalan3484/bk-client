@@ -44,7 +44,7 @@ const Footer = () => {
                                         {methods.locationTiming.map((item, i) => (
                                             <tr key={i}>
 
-                                                <td className="pr-[18px] py-2">
+                                                <td className="px-0 md:pr-[18px] py-2">
                                                     <a href={item.link} target='_blank' rel="noreferrer noopener" className="text-blue-gray-600 hover:text-indigo-500  text-xs md:text-sm group">
                                                         {item.name}
                                                         <span className='inline-block'>
