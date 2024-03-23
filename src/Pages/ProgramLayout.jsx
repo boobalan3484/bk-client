@@ -53,14 +53,14 @@ const ProgramLayout = () => {
 				</h3>
 
 				<p className=" my-3 m-auto lg:text-xl font-semibold   text-center text-base"
-					data-aos='fade-down' data-aos-delay='1400'
+					data-aos='fade-down' 
 				>
 					{program.description}
 				</p>
 
 				<div className="m-auto my-4 lg:my-0 flex justify-between items-center flex-nowrap lg:flex-row flex-col md:gap-4 sm:gap-4 lg:gap-0 ">
 					<p className="lg:text-xl w-full lg:w-4/5 text-justify md:text-base "
-						data-aos='fade-up' data-aos-delay='1400'
+						data-aos='fade-up' 
 					>
 						{program.para1}
 					</p>
@@ -69,7 +69,7 @@ const ProgramLayout = () => {
 							className="w-full h-full"
 							src={program.img2}
 							alt=" "
-							data-aos='zoom-in' data-aos-delay='1800'
+							data-aos='zoom-in' 
 						/>
 					</div>
 				</div>
@@ -79,7 +79,7 @@ const ProgramLayout = () => {
 					</p> */}
 
 				<div className="my-8 px-1  text-center "
-					data-aos='zoom-in' data-aos-delay='2000'>
+					data-aos='zoom-in'>
 					<Link to={`/${'contact'}`} className="group/a text-blue-gray-50 group-hover/a:text-white  bg-indigo-600 hover:bg-indigo-500 py-3 px-6 rounded-full duration-150 active:bg-indigo-300 tracking-wide font-medium">
 						Enquire Now
 						<span className='inline-block'>
@@ -88,18 +88,18 @@ const ProgramLayout = () => {
 					</Link>
 				</div>
 
-				{/* <div className="m-auto flex justify-evenly items-center flex-nowrap lg:flex-row flex-col md:gap-4 sm:gap-4 lg:gap-0 ">
-						<div className="lg:w-[15%] h-[150px] lg:h-[200px] md:w-[20%] sm:w-[20%]">
-							<img
-								className="w-full h-full"
-								src={program.img3}
-								alt=" "
-							/>
-						</div>
-						<p className="lg:text-xl my-3 w-4/5 text-justify text-base ">
-							{program.para4}
-						</p>
-					</div> */}
+					{/* <div className="m-auto flex justify-evenly items-center flex-nowrap lg:flex-row flex-col md:gap-4 sm:gap-4 lg:gap-0 ">
+							<div className="lg:w-[15%] h-[150px] lg:h-[200px] md:w-[20%] sm:w-[20%]">
+								<img
+									className="w-full h-full"
+									src={program.img3}
+									alt=" "
+								/>
+							</div>
+							<p className="lg:text-xl my-3 w-4/5 text-justify text-base ">
+								{program.para4}
+							</p>
+						</div> */}
 
 				{/* </div> */}
 			</div>
