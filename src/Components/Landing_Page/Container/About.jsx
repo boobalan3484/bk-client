@@ -20,7 +20,7 @@ const About = () => {
 
     return (
 
-        <section id='about' className="py-14 pt-20" >
+        <section id='about' className="pb-14 pt-24" >
             <div className="max-w-screen-xl mx-auto md:px-8">
                 <div className=" items-center gap-x-10 sm:px-4 md:px-0 lg:flex">
                     {/*Swiper*/}
@@ -37,7 +37,12 @@ const About = () => {
                                 setImages && setImages?.map((a, i) => (
                                     <SwiperSlide key={i}
                                         className='bg-white rounded-3xl px-4 pt-4 pb-8 border-b-4 border-[#d6d6d6]'>
-                                        <img src={a.src} alt={a.alt} className='w-full h-60 lg:h-full object-cover rounded-2xl drop-shadow-md' />
+                                        <img
+                                            src={a.src}
+                                            alt={a.alt}
+                                            className='w-full h-60 lg:h-full object-cover rounded-2xl drop-shadow-md'
+                                            loading="lazy"
+                                        />
 
                                     </SwiperSlide>
                                 ))

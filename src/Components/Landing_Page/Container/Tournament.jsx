@@ -37,7 +37,7 @@ const Tournament = () => {
 
     return (
 
-        <section id='tournament' className="py-14 pt-20">
+        <section id='tournament' className="pb-14 pt-24">
             <div className="max-w-screen-xl mx-auto px-4 md:px-8">
                 <div className="max-w-xl" data-aos="zoom-in">
                     <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
@@ -63,7 +63,7 @@ const Tournament = () => {
                                                     {item.Tname}
                                                 </h3>
 
-                                                <span className="flex items-center text-gray-500 uppercase">
+                                                <span className="flex items-center text-xs lg:text-sm text-gray-500 uppercase">
                                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
                                                         <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
                                                     </svg>

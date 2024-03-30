@@ -52,7 +52,7 @@ export const content = {
             url: 'karate',
             img1: Karate_Cover,
             img2: Karate_Right,
-            // img3: YogaSection,
+
             para1: "Today, karate is practiced by millions of people worldwide, encompassing a diverse community of practitioners ranging from children to seniors.Despite these stylistic variations, the core principles of karate remained consistent: discipline, respect,humility, and the pursuit of self-improvement. Karate has also evolved into a competitive sport, with international tournaments such as the World Karate Championships showcasing the skills of top athletes.",
             line1: "Enter a realm of ancient healing and martial arts mastery at Bhohar Karate Training School, we honor the legacy of Shotokan Karate, offering a sanctuary for individuals to embark on a journey of self-discovery, discipline, and mastery. Our dojo is committed to upholding the traditional teachings of this ancient martial art while embracing modern methodologies for holistic development.",
 
@@ -210,31 +210,37 @@ export const content = {
         },
     ],
 
-    jobs: [
+    tournament: [
         {
             title: "Shotakan Karate",
             desc: "Currently, ManTech is seeking a motivated, career and customer-oriented Software Developer to join our team in Fort Meade, MD.",
             date: "May 17, 2024",
-            guest: 'Mr.Qwertyu, Director of XYZ Federation',
-            location: "Periyamanali",
-            impression: "Book Now",
+            time:"10.00 AM to 05.00 PM",
+            guest: 'Mr.Loganathan, Director of XYZ Federation',
+            address: "Periyamanali",
+            city:"Namakkal",
+            fees: 200,
 
         },
         {
             title: "Silambam ",
             desc: " Help us solve problems and develop great user interface tools for our developers.",
             date: "Jan 11, 2024",
-            guest: 'Mr.Asdfghj, Director of ABC Federation',
-            location: "Iluppili",
-            impression: "Closed"
+            time:"10.00 AM to 06.00 PM",
+            guest: 'Mr.Prabu, Director of ABC Federation',
+            address: "Iluppili",
+            city:"Salem",
+            fees: 300,
         },
         {
             title: "Nunchaku",
             desc: "This position is 100% remote, working as part of a small, multi-functional team. You must be confident at working alone.",
             date: "Apr 2, 2024",
-            guest: 'Mr.Zxcvbnm, Director of MNO Federation',
-            location: "Mallur",
-            impression: "Book Now"
+            time:"10.00 AM to 08.00 PM",
+            guest: 'Mr.Kumaran, Director of MNO Federation',
+            address: "Mallur",
+            city:"Salem",
+            fees: 200,
         },
     ],
 
@@ -325,7 +331,7 @@ export const content = {
         }
     ],
 
-    team: [
+    staff: [
         {
             avatar: "https://images.unsplash.com/photo-1511485977113-f34c92461ad9?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&ixid=eyJhcHBfaWQiOjE3Nzg0fQ",
             name: "Martiana dialan",

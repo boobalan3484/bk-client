@@ -40,7 +40,8 @@ const ProgramLayout = () => {
 				<img
 					className="h-[150px] lg:h-[200px] object-contain mx-auto"
 					src={program.img1}
-					alt=" "
+					alt="Martial Arts Cover"
+					loading="lazy"
 					data-aos='zoom-in'
 					data-aos-delay='0'
 				/>
@@ -91,15 +92,12 @@ const ProgramLayout = () => {
 						<img
 							className="w-full h-full"
 							src={program.img2}
-							alt=" "
+							alt="Martial Arts Unique"
+							loading="lazy"
 							data-aos='zoom-in'
 						/>
 					</div>
-
-
 				</div>
-
-
 			</div>
 		</section>
 	);

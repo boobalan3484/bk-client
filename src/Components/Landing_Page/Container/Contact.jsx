@@ -9,7 +9,7 @@ const Contact = () => {
 
 
     return (
-        <section id='contact' className="py-14 pt-20">
+        <section id='contact' className="pb-14 pt-24">
             <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
                 <div className=" mx-auto gap-6 justify-between lg:flex lg:max-w-none">
                     <div className="max-w-lg space-y-3"

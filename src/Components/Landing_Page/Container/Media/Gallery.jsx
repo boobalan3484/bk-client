@@ -21,7 +21,7 @@ const Gallery = () => {
                     Gallery
                 </h3>
                 <p className="mt-3">
-                The Spirit of Martial Arts Discover the energy and focus of our students as they embark on their journey, showcased in our gallery of dynamic training sessions.
+                    The Spirit of Martial Arts Discover the energy and focus of our students as they embark on their journey, showcased in our gallery of dynamic training sessions.
                 </p>
             </div>
             <div className="mt-8  grid gap-y-8 gap-x-12 sm:grid-cols-2 lg:grid-cols-3" >
@@ -34,6 +34,7 @@ const Gallery = () => {
                                     src={item.src}
                                     alt={item.alt}
                                     className="h-56 sm:h-64 w-full object-cover brightness-95 duration-150 group-hover/img1:brightness-100"
+                                    loading="lazy"
                                 />
                             ))}
                         </Carousel>
@@ -43,7 +44,7 @@ const Gallery = () => {
                                     key={item.id}
                                     src={item.src}
                                     alt={item.alt}
-                                    
+                                    loading="lazy"
                                     className="h-56 sm:h-64 w-full object-cover brightness-95 duration-150 group-hover/img2:brightness-100"
                                 />
                             ))}
@@ -54,6 +55,7 @@ const Gallery = () => {
                                     key={item.id}
                                     src={item.src}
                                     alt={item.alt}
+                                    loading="lazy"
                                     className="h-56 sm:h-64 w-full object-cover brightness-95 duration-150 group-hover/img3:brightness-100"
                                 />
                             ))}

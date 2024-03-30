@@ -13,7 +13,7 @@ const NavBar = ({ navScroll, navStyle }) => {
 
   return (
 
-    <header className={`  fixed top-0 z-20 w-full transition-transform duration-300 ease-in-out ${navStyle} ${navScroll ? '-translate-y-full' : 'translate-y-0 '}    ${active && 'backdrop-blur-md'}`}>
+    <header className={`  fixed top-0 z-20 w-full transition-transform duration-300 ease-in-out ${navStyle} ${active && 'backdrop-blur-md'}`}>
 
       <nav className="  w-full md:static md:text-sm md:border-none">
 
@@ -45,8 +45,7 @@ const NavBar = ({ navScroll, navStyle }) => {
 
           <div className={`flex-1 pb-3 mt-8 md:block md:pb-0 md:mt-0 ${active ? 'block backdrop-blur-md' : 'hidden '}`}>
 
-            <NavLinks
-            />
+            <NavLinks />
 
           </div>
 

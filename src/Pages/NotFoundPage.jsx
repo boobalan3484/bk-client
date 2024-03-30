@@ -24,11 +24,11 @@ const NotFoundPage = () => {
               Contact support
             </a>
           </div> */}
-          <Link to={'/'} className="group/a text-indigo-600 duration-150 hover:text-indigo-500 font-medium inline-flex items-center gap-x-1 drop-shadow" data-aos='fade-left' data-aos-delay='1200'>
+          <Link to={'/'} className="group/a text-indigo-600 duration-150 hover:text-indigo-500 font-medium inline-flex items-center gap-x-1 drop-shadow bg-light-blue-50 rounded-lg px-10 py-2" data-aos='fade-left' data-aos-delay='1000'>
             <span className='absolute'>
               <IoIosArrowRoundUp className='-rotate-90 text-2xl text-indigo-600 group-hover/a:text-gray-800  transform translate-x-44 group-hover/a:-translate-x-7 drop-shadow  transition-all duration-700 z-10' />
             </span>
-            Navigate to Home Page
+            Go Back to Home Page
           </Link>
         </div>
       </div>

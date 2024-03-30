@@ -1,5 +1,6 @@
 import React from 'react'
 import KaratePNG from '../../../Assets/hero/Hero.svg'
+// import KaratePNG from '../../../Assets/hero/Layer 1.svg'
 import { Link } from 'react-scroll'
 import { IoIosArrowDown } from "react-icons/io";
 
@@ -49,7 +50,11 @@ const Hero = () => {
         <div className="flex-1 text-center mt-4 lg:mt-0 lg:ml-3"
           data-aos="fade-up" data-aos-delay="1000"
         >
-          <img src={`${KaratePNG}`} alt=' ' className="w-full sm:w-10/12 lg:w-full mx-auto drop-shadow-xl object-cover" />
+          <img src={`${KaratePNG}`} 
+          alt='Hero' 
+          className=" transform scale-x-[-1] w-full sm:w-10/12 lg:w-full mx-auto drop-shadow-lg object-cover" 
+          loading="lazy"
+          />
         </div>
       </div>
 

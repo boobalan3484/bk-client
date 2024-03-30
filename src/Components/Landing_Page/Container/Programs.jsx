@@ -7,7 +7,7 @@ const Programs = () => {
 	const {programData} = content;
 
 	return (
-		<section id="programs" className="py-14 pt-20">
+		<section id="programs" className="pb-14 pt-24">
 			<div className="max-w-screen-xl mx-auto px-4 md:px-8">
 				<div className="max-w-xl" data-aos="zoom-in">
 					<h1 className="text-gray-800 text-3xl font-semibold sm:text-4xl tracking-wide">
@@ -19,12 +19,12 @@ const Programs = () => {
 					</p>
 				</div>
 				<ul className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3 group/list">
-					{programData.map((item, id) => (
+					{programData.map((item, i) => (
 						<li
-							key={id}
+							key={i}
 							className=" group/a rounded-lg shadow-sm shadow-blue-gray-400 hover:shadow-lg hover:shadow-blue-gray-500 group-hover/list:blur-sm hover:!blur-none cursor-pointer transition duration-300 ease-in"
 							data-aos="zoom-in"
-							data-aos-delay={id * 500}
+							data-aos-delay={i * 400}
 						>
 							<div className="flex items-center justify-between p-4 ">
 								<div className="space-y-2 flex flex-col items-center">
